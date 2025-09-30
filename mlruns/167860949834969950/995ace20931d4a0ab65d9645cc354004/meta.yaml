@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/167860949834969950/995ace20931d4a0ab65d9645cc354004/artifacts
+end_time: 1750523684315
+entry_point_name: ''
+experiment_id: '167860949834969950'
+lifecycle_stage: active
+run_id: 995ace20931d4a0ab65d9645cc354004
+run_name: bustling-whale-930
+run_uuid: 995ace20931d4a0ab65d9645cc354004
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750523676180
+status: 3
+tags: []
+user_id: tomas

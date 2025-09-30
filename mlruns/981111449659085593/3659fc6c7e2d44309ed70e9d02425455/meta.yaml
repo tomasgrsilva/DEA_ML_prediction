@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/981111449659085593/3659fc6c7e2d44309ed70e9d02425455/artifacts
+end_time: 1750520671537
+entry_point_name: ''
+experiment_id: '981111449659085593'
+lifecycle_stage: active
+run_id: 3659fc6c7e2d44309ed70e9d02425455
+run_name: dashing-turtle-753
+run_uuid: 3659fc6c7e2d44309ed70e9d02425455
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750520663222
+status: 3
+tags: []
+user_id: tomas

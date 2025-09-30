@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/761724472674345344/f81fb25770f14191b6f26e2278dfaed3/artifacts
+deleted_time: 1752255463141
+end_time: 1752254247131
+entry_point_name: ''
+experiment_id: '761724472674345344'
+lifecycle_stage: deleted
+run_id: f81fb25770f14191b6f26e2278dfaed3
+run_name: bold-hog-142
+run_uuid: f81fb25770f14191b6f26e2278dfaed3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752254236273
+status: 3
+tags: []
+user_id: tomas

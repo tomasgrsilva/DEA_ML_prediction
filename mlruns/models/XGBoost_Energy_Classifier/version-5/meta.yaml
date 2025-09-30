@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754485900957
+current_stage: None
+description: null
+last_updated_timestamp: 1754485900957
+name: XGBoost_Energy_Classifier
+run_id: 8dea6146e09e4225ab243214640ba479
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/279776852867894717/8dea6146e09e4225ab243214640ba479/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/279776852867894717/8dea6146e09e4225ab243214640ba479/artifacts/model
+user_id: null
+version: 5

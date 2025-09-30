@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/417073509916767371/93bd7e2265d2460f8e508a34d35d6788/artifacts
+end_time: 1747768725146
+entry_point_name: ''
+experiment_id: '417073509916767371'
+lifecycle_stage: active
+run_id: 93bd7e2265d2460f8e508a34d35d6788
+run_name: upbeat-snail-540
+run_uuid: 93bd7e2265d2460f8e508a34d35d6788
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747768717516
+status: 3
+tags: []
+user_id: tomas

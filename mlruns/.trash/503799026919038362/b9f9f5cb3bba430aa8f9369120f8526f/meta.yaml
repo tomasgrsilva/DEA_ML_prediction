@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/503799026919038362/b9f9f5cb3bba430aa8f9369120f8526f/artifacts
+deleted_time: 1750520281208
+end_time: 1750194779538
+entry_point_name: ''
+experiment_id: '503799026919038362'
+lifecycle_stage: deleted
+run_id: b9f9f5cb3bba430aa8f9369120f8526f
+run_name: painted-crow-180
+run_uuid: b9f9f5cb3bba430aa8f9369120f8526f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750194768784
+status: 3
+tags: []
+user_id: tomas

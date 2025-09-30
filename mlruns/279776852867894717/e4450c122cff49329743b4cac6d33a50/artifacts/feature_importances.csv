@@ -1,0 +1,15 @@
+Feature,Importance
+molecular_weight,0.07308694
+num_C,0.031197986
+num_H,0.0559858
+num_Cl,0.029552707
+num_Br,0.01718043
+num_F,0.1642214
+num_I,0.0
+num_D,0.0
+num_O,0.063579604
+num_N,0.011946803
+electron_affinity,0.032133453
+lowest_bde,0.16270709
+mean_bde,0.2191823
+th_energy,0.1392254

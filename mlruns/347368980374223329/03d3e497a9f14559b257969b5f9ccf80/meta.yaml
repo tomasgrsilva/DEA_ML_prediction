@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/347368980374223329/03d3e497a9f14559b257969b5f9ccf80/artifacts
+end_time: 1744127459057
+entry_point_name: ''
+experiment_id: '347368980374223329'
+lifecycle_stage: active
+run_id: 03d3e497a9f14559b257969b5f9ccf80
+run_name: RF_88_all_halogens
+run_uuid: 03d3e497a9f14559b257969b5f9ccf80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744127400457
+status: 3
+tags: []
+user_id: tomas

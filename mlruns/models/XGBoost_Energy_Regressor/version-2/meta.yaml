@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1750609784189
+current_stage: None
+description: null
+last_updated_timestamp: 1750609784189
+name: XGBoost_Energy_Regressor
+run_id: 9782d7857a01423a85e0690fbee48d6d
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/615594240622010719/9782d7857a01423a85e0690fbee48d6d/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/615594240622010719/9782d7857a01423a85e0690fbee48d6d/artifacts/model
+user_id: null
+version: 2

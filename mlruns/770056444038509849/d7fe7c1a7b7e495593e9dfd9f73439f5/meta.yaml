@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/d7fe7c1a7b7e495593e9dfd9f73439f5/artifacts
+deleted_time: 1752253257062
+end_time: 1752253144361
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: d7fe7c1a7b7e495593e9dfd9f73439f5
+run_name: nervous-stoat-110
+run_uuid: d7fe7c1a7b7e495593e9dfd9f73439f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752253133954
+status: 3
+tags: []
+user_id: tomas

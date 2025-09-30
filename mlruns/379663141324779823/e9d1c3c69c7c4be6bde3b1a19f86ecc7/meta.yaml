@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/e9d1c3c69c7c4be6bde3b1a19f86ecc7/artifacts
+deleted_time: 1754156561365
+end_time: 1754156509994
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: e9d1c3c69c7c4be6bde3b1a19f86ecc7
+run_name: popular-pug-407
+run_uuid: e9d1c3c69c7c4be6bde3b1a19f86ecc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754156490078
+status: 3
+tags: []
+user_id: tomas

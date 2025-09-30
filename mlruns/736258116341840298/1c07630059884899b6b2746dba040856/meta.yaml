@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/736258116341840298/1c07630059884899b6b2746dba040856/artifacts
+end_time: 1751820598221
+entry_point_name: ''
+experiment_id: '736258116341840298'
+lifecycle_stage: active
+run_id: 1c07630059884899b6b2746dba040856
+run_name: adventurous-slug-9
+run_uuid: 1c07630059884899b6b2746dba040856
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751820589603
+status: 3
+tags: []
+user_id: tomas

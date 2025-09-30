@@ -1,0 +1,36 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "molecular_weight",
+      "num_C",
+      "num_H",
+      "num_Cl",
+      "num_Br",
+      "num_F",
+      "num_I",
+      "num_D",
+      "num_O",
+      "num_N",
+      "electron_affinity",
+      "lowest_bde",
+      "mean_bde"
+    ],
+    "data": [
+      [
+        84.93258,
+        1,
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.617,
+        3.4908,
+        3.4908
+      ]
+    ]
+  }
+}

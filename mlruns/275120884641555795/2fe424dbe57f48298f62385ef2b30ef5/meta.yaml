@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/2fe424dbe57f48298f62385ef2b30ef5/artifacts
+end_time: 1754486563996
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: active
+run_id: 2fe424dbe57f48298f62385ef2b30ef5
+run_name: gregarious-colt-880
+run_uuid: 2fe424dbe57f48298f62385ef2b30ef5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754486552570
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/417073509916767371/45c223ac5f5145cba072516b39ba9578/artifacts
+end_time: 1749986846118
+entry_point_name: ''
+experiment_id: '417073509916767371'
+lifecycle_stage: active
+run_id: 45c223ac5f5145cba072516b39ba9578
+run_name: grandiose-bee-252
+run_uuid: 45c223ac5f5145cba072516b39ba9578
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749986823256
+status: 3
+tags: []
+user_id: tomas

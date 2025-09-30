@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/508144207109567041/256bee9dd95742f5a4e9549d7f771649/artifacts
+end_time: 1750518064584
+entry_point_name: ''
+experiment_id: '508144207109567041'
+lifecycle_stage: active
+run_id: 256bee9dd95742f5a4e9549d7f771649
+run_name: placid-hawk-786
+run_uuid: 256bee9dd95742f5a4e9549d7f771649
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518055994
+status: 3
+tags: []
+user_id: tomas

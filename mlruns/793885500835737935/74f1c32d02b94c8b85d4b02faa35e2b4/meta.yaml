@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/793885500835737935/74f1c32d02b94c8b85d4b02faa35e2b4/artifacts
+deleted_time: 1748436336475
+end_time: 1748435952655
+entry_point_name: ''
+experiment_id: '793885500835737935'
+lifecycle_stage: deleted
+run_id: 74f1c32d02b94c8b85d4b02faa35e2b4
+run_name: lyrical-mink-579
+run_uuid: 74f1c32d02b94c8b85d4b02faa35e2b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748435952506
+status: 4
+tags: []
+user_id: tomas

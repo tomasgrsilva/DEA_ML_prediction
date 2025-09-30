@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/625141757892407185/3875c4d561844d0abb2919ad27fea2d8/artifacts
+end_time: 1754486036352
+entry_point_name: ''
+experiment_id: '625141757892407185'
+lifecycle_stage: active
+run_id: 3875c4d561844d0abb2919ad27fea2d8
+run_name: adventurous-ape-441
+run_uuid: 3875c4d561844d0abb2919ad27fea2d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754486025109
+status: 3
+tags: []
+user_id: tomas

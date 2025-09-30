@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/7435ff4b8686495faf9edcb8c4d4cd25/artifacts
+deleted_time: 1752252479338
+end_time: 1752250326967
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 7435ff4b8686495faf9edcb8c4d4cd25
+run_name: likeable-crane-115
+run_uuid: 7435ff4b8686495faf9edcb8c4d4cd25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752250312809
+status: 3
+tags: []
+user_id: tomas

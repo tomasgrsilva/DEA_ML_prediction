@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/963245440642824416/22922aae0dcb4b1498bbe0c10c758ce1/artifacts
+deleted_time: 1750520295708
+end_time: 1750178968561
+entry_point_name: ''
+experiment_id: '963245440642824416'
+lifecycle_stage: deleted
+run_id: 22922aae0dcb4b1498bbe0c10c758ce1
+run_name: wise-moth-244
+run_uuid: 22922aae0dcb4b1498bbe0c10c758ce1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750178958168
+status: 3
+tags: []
+user_id: tomas

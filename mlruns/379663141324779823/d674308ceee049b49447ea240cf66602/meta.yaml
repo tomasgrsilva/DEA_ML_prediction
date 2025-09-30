@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/d674308ceee049b49447ea240cf66602/artifacts
+end_time: 1754486459980
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: active
+run_id: d674308ceee049b49447ea240cf66602
+run_name: unleashed-doe-336
+run_uuid: d674308ceee049b49447ea240cf66602
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754486445403
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754483488225
+current_stage: None
+description: null
+last_updated_timestamp: 1754483488225
+name: Logistic Regression_Energy_Classifier
+run_id: a8b8d09f1e2c49ba91023eba7bc34d6d
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/284947899444198852/a8b8d09f1e2c49ba91023eba7bc34d6d/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/284947899444198852/a8b8d09f1e2c49ba91023eba7bc34d6d/artifacts/model
+user_id: null
+version: 5

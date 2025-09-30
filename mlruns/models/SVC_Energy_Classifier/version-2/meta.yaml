@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1751818474613
+current_stage: None
+description: null
+last_updated_timestamp: 1751818474613
+name: SVC_Energy_Classifier
+run_id: d7c9e4514a32431d860d3dc0a9d4d847
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/464057534103626556/d7c9e4514a32431d860d3dc0a9d4d847/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/464057534103626556/d7c9e4514a32431d860d3dc0a9d4d847/artifacts/model
+user_id: null
+version: 2

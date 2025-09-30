@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/dc50c11561e8484bacfcf1d8ffee9830/artifacts
+end_time: 1751817587018
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: active
+run_id: dc50c11561e8484bacfcf1d8ffee9830
+run_name: learned-chimp-292
+run_uuid: dc50c11561e8484bacfcf1d8ffee9830
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751817576475
+status: 3
+tags: []
+user_id: tomas

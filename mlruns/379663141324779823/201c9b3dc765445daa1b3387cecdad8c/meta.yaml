@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/201c9b3dc765445daa1b3387cecdad8c/artifacts
+deleted_time: 1753128904133
+end_time: 1753123838106
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: 201c9b3dc765445daa1b3387cecdad8c
+run_name: stately-bee-849
+run_uuid: 201c9b3dc765445daa1b3387cecdad8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753123825757
+status: 3
+tags: []
+user_id: tomas

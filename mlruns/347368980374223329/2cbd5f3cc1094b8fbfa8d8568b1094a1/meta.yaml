@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/347368980374223329/2cbd5f3cc1094b8fbfa8d8568b1094a1/artifacts
+end_time: 1744128845727
+entry_point_name: ''
+experiment_id: '347368980374223329'
+lifecycle_stage: active
+run_id: 2cbd5f3cc1094b8fbfa8d8568b1094a1
+run_name: RF_88_Cl
+run_uuid: 2cbd5f3cc1094b8fbfa8d8568b1094a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744128814123
+status: 3
+tags: []
+user_id: tomas

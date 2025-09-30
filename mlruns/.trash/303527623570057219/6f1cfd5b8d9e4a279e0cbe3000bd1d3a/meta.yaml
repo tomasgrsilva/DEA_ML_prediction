@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/303527623570057219/6f1cfd5b8d9e4a279e0cbe3000bd1d3a/artifacts
+deleted_time: 1750520292488
+end_time: 1750180178548
+entry_point_name: ''
+experiment_id: '303527623570057219'
+lifecycle_stage: deleted
+run_id: 6f1cfd5b8d9e4a279e0cbe3000bd1d3a
+run_name: zealous-moose-808
+run_uuid: 6f1cfd5b8d9e4a279e0cbe3000bd1d3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750180168858
+status: 3
+tags: []
+user_id: tomas

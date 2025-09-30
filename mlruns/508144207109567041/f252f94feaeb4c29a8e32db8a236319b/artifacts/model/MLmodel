@@ -1,0 +1,54 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.21.0
+model_size_bytes: 26061
+model_uuid: 3106bf5b5ec741d4836d3f76bea1c77f
+prompts: null
+run_id: f252f94feaeb4c29a8e32db8a236319b
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "molecular_weight", "required": true}, {"type":
+    "long", "name": "num_C", "required": true}, {"type": "double", "name": "num_H",
+    "required": true}, {"type": "double", "name": "num_Cl", "required": true}, {"type":
+    "double", "name": "num_Br", "required": true}, {"type": "double", "name": "num_F",
+    "required": true}, {"type": "double", "name": "num_I", "required": true}, {"type":
+    "double", "name": "num_D", "required": true}, {"type": "double", "name": "num_O",
+    "required": true}, {"type": "double", "name": "num_N", "required": true}, {"type":
+    "double", "name": "Cl1", "required": true}, {"type": "double", "name": "Cl2",
+    "required": true}, {"type": "double", "name": "Cl3", "required": true}, {"type":
+    "double", "name": "Cl4", "required": true}, {"type": "double", "name": "Cl5",
+    "required": true}, {"type": "double", "name": "Br1", "required": true}, {"type":
+    "double", "name": "Br2", "required": true}, {"type": "double", "name": "Br3",
+    "required": true}, {"type": "double", "name": "Br4", "required": true}, {"type":
+    "double", "name": "F1", "required": true}, {"type": "double", "name": "F2", "required":
+    true}, {"type": "double", "name": "F3", "required": true}, {"type": "double",
+    "name": "F4", "required": true}, {"type": "double", "name": "F6", "required":
+    true}, {"type": "double", "name": "F11", "required": true}, {"type": "double",
+    "name": "F13", "required": true}, {"type": "double", "name": "F15", "required":
+    true}, {"type": "double", "name": "F19", "required": true}, {"type": "double",
+    "name": "I1", "required": true}, {"type": "double", "name": "I2", "required":
+    true}, {"type": "double", "name": "electron_affinity", "required": true}, {"type":
+    "double", "name": "lowest_bde", "required": true}, {"type": "double", "name":
+    "mean_bde", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-22 16:43:06.568967'

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/414500820863644463/c0cf4796b47d412d8ef394ae6b8094f9/artifacts
+end_time: 1743002583423
+entry_point_name: ''
+experiment_id: '414500820863644463'
+lifecycle_stage: active
+run_id: c0cf4796b47d412d8ef394ae6b8094f9
+run_name: mercurial-sheep-152
+run_uuid: c0cf4796b47d412d8ef394ae6b8094f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743002558254
+status: 3
+tags: []
+user_id: tomas

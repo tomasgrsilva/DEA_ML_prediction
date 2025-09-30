@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/736258116341840298/891acf53b78941c1891d9b350b4c6d58/artifacts
+end_time: 1750518482456
+entry_point_name: ''
+experiment_id: '736258116341840298'
+lifecycle_stage: active
+run_id: 891acf53b78941c1891d9b350b4c6d58
+run_name: marvelous-sow-423
+run_uuid: 891acf53b78941c1891d9b350b4c6d58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518474068
+status: 3
+tags: []
+user_id: tomas

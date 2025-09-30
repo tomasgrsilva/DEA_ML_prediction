@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/279776852867894717/b8bac3ea92c543168889315004be22e4/artifacts
+end_time: 1751818194429
+entry_point_name: ''
+experiment_id: '279776852867894717'
+lifecycle_stage: active
+run_id: b8bac3ea92c543168889315004be22e4
+run_name: bedecked-hog-200
+run_uuid: b8bac3ea92c543168889315004be22e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751818185821
+status: 3
+tags: []
+user_id: tomas

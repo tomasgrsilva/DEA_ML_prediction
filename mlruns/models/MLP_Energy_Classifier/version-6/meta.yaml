@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1755527201171
+current_stage: None
+description: null
+last_updated_timestamp: 1755527201171
+name: MLP_Energy_Classifier
+run_id: 08faf43da1c04ef1bdcfa69bff516e91
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/981111449659085593/08faf43da1c04ef1bdcfa69bff516e91/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/981111449659085593/08faf43da1c04ef1bdcfa69bff516e91/artifacts/model
+user_id: null
+version: 6

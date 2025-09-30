@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/bc966d8b64e944bdbdb304b4b4a1683d/artifacts
+deleted_time: 1754156983264
+end_time: 1754156929315
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: bc966d8b64e944bdbdb304b4b4a1683d
+run_name: indecisive-flea-480
+run_uuid: bc966d8b64e944bdbdb304b4b4a1683d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754156915351
+status: 3
+tags: []
+user_id: tomas

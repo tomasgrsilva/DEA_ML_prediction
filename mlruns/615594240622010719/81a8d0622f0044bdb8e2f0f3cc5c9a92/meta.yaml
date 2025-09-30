@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/615594240622010719/81a8d0622f0044bdb8e2f0f3cc5c9a92/artifacts
+end_time: 1750518423743
+entry_point_name: ''
+experiment_id: '615594240622010719'
+lifecycle_stage: active
+run_id: 81a8d0622f0044bdb8e2f0f3cc5c9a92
+run_name: incongruous-bug-352
+run_uuid: 81a8d0622f0044bdb8e2f0f3cc5c9a92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518415070
+status: 3
+tags: []
+user_id: tomas

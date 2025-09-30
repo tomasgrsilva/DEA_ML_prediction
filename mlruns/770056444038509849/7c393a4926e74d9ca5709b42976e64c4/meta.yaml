@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/7c393a4926e74d9ca5709b42976e64c4/artifacts
+deleted_time: 1752500940056
+end_time: 1752500929271
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 7c393a4926e74d9ca5709b42976e64c4
+run_name: carefree-bird-623
+run_uuid: 7c393a4926e74d9ca5709b42976e64c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752500915218
+status: 3
+tags: []
+user_id: tomas

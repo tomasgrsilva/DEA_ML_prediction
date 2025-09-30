@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/784442104464566485/9056fe599f8f45b198c166c571728531/artifacts
+deleted_time: 1750520284343
+end_time: 1750246564119
+entry_point_name: ''
+experiment_id: '784442104464566485'
+lifecycle_stage: deleted
+run_id: 9056fe599f8f45b198c166c571728531
+run_name: judicious-mare-843
+run_uuid: 9056fe599f8f45b198c166c571728531
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750246551447
+status: 3
+tags: []
+user_id: tomas

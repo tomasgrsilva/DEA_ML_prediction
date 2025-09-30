@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/1ddc8ffdb48b43899346fd3b200a3f7c/artifacts
+deleted_time: 1750503008339
+end_time: 1750502287292
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: deleted
+run_id: 1ddc8ffdb48b43899346fd3b200a3f7c
+run_name: marvelous-steed-607
+run_uuid: 1ddc8ffdb48b43899346fd3b200a3f7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750502276810
+status: 3
+tags: []
+user_id: tomas

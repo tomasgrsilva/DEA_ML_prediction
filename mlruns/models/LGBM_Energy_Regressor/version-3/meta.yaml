@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1751820598200
+current_stage: None
+description: null
+last_updated_timestamp: 1751820598200
+name: LGBM_Energy_Regressor
+run_id: 1c07630059884899b6b2746dba040856
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/736258116341840298/1c07630059884899b6b2746dba040856/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/736258116341840298/1c07630059884899b6b2746dba040856/artifacts/model
+user_id: null
+version: 3

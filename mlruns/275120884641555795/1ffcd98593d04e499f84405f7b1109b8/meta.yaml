@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/1ffcd98593d04e499f84405f7b1109b8/artifacts
+end_time: 1750502943908
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: active
+run_id: 1ffcd98593d04e499f84405f7b1109b8
+run_name: flawless-fox-109
+run_uuid: 1ffcd98593d04e499f84405f7b1109b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750502933815
+status: 3
+tags: []
+user_id: tomas

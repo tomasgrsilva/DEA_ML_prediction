@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/508144207109567041/e85a1bfb41a94156a07cfbc215066d85/artifacts
+deleted_time: 1750599550173
+end_time: 1750329496257
+entry_point_name: ''
+experiment_id: '508144207109567041'
+lifecycle_stage: deleted
+run_id: e85a1bfb41a94156a07cfbc215066d85
+run_name: vaunted-rat-662
+run_uuid: e85a1bfb41a94156a07cfbc215066d85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750329485810
+status: 3
+tags: []
+user_id: tomas

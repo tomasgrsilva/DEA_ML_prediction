@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/bd6330cfa1cf452190d07e1e9998927c/artifacts
+deleted_time: 1752255469699
+end_time: 1752253334822
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: bd6330cfa1cf452190d07e1e9998927c
+run_name: suave-bee-663
+run_uuid: bd6330cfa1cf452190d07e1e9998927c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752253324886
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/417073509916767371/9de7fe584f814c8ab587cbea10ea133b/artifacts
+end_time: 1750346798154
+entry_point_name: ''
+experiment_id: '417073509916767371'
+lifecycle_stage: active
+run_id: 9de7fe584f814c8ab587cbea10ea133b
+run_name: nimble-dolphin-597
+run_uuid: 9de7fe584f814c8ab587cbea10ea133b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750346789588
+status: 3
+tags: []
+user_id: tomas

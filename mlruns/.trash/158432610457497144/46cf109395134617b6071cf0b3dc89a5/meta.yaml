@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/158432610457497144/46cf109395134617b6071cf0b3dc89a5/artifacts
+deleted_time: 1750493881539
+end_time: 1750259264239
+entry_point_name: ''
+experiment_id: '158432610457497144'
+lifecycle_stage: deleted
+run_id: 46cf109395134617b6071cf0b3dc89a5
+run_name: gentle-mare-289
+run_uuid: 46cf109395134617b6071cf0b3dc89a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750259254818
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/963245440642824416/8ef99fdaa96f4449ad068c958472970e/artifacts
+deleted_time: 1750520295708
+end_time: 1750178312440
+entry_point_name: ''
+experiment_id: '963245440642824416'
+lifecycle_stage: deleted
+run_id: 8ef99fdaa96f4449ad068c958472970e
+run_name: adorable-steed-544
+run_uuid: 8ef99fdaa96f4449ad068c958472970e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750178300618
+status: 3
+tags: []
+user_id: tomas

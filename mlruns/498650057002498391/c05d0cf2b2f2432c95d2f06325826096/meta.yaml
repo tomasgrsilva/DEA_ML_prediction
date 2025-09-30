@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/498650057002498391/c05d0cf2b2f2432c95d2f06325826096/artifacts
+end_time: 1749812241966
+entry_point_name: ''
+experiment_id: '498650057002498391'
+lifecycle_stage: active
+run_id: c05d0cf2b2f2432c95d2f06325826096
+run_name: awesome-grouse-828
+run_uuid: c05d0cf2b2f2432c95d2f06325826096
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749812228011
+status: 3
+tags: []
+user_id: tomas

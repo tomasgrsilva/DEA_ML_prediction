@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/33245688c5e9466782105aa9ddbbec82/artifacts
+end_time: 1752501104912
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: active
+run_id: 33245688c5e9466782105aa9ddbbec82
+run_name: unleashed-hen-878
+run_uuid: 33245688c5e9466782105aa9ddbbec82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752501090703
+status: 3
+tags: []
+user_id: tomas

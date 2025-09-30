@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1750520762735
+current_stage: None
+description: null
+last_updated_timestamp: 1750520762735
+name: Balanced RF_Energy_Classifier
+run_id: c8618c2406ef4b86ad2830755d29f804
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/759098936114587917/c8618c2406ef4b86ad2830755d29f804/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/759098936114587917/c8618c2406ef4b86ad2830755d29f804/artifacts/model
+user_id: null
+version: 1

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/e46e8af83f1f488cb1e057a4ed6ffa29/artifacts
+deleted_time: 1753206838204
+end_time: 1753206821999
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: e46e8af83f1f488cb1e057a4ed6ffa29
+run_name: delicate-wasp-234
+run_uuid: e46e8af83f1f488cb1e057a4ed6ffa29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753206808417
+status: 3
+tags: []
+user_id: tomas

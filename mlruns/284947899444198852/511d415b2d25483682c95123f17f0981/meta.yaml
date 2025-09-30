@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/284947899444198852/511d415b2d25483682c95123f17f0981/artifacts
+end_time: 1755674016301
+entry_point_name: ''
+experiment_id: '284947899444198852'
+lifecycle_stage: active
+run_id: 511d415b2d25483682c95123f17f0981
+run_name: bittersweet-wolf-107
+run_uuid: 511d415b2d25483682c95123f17f0981
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755674005165
+status: 3
+tags: []
+user_id: tomas

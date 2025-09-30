@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/793219614082977724/8a2236b8e64442e8a77b21b6382e78db/artifacts
+end_time: 1755520016199
+entry_point_name: ''
+experiment_id: '793219614082977724'
+lifecycle_stage: active
+run_id: 8a2236b8e64442e8a77b21b6382e78db
+run_name: clean-deer-639
+run_uuid: 8a2236b8e64442e8a77b21b6382e78db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755520006489
+status: 3
+tags: []
+user_id: tomas

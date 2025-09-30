@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/424884544014170375/36a310f920e84072b5b98d347c170a3f/artifacts
+deleted_time: 1750611703379
+end_time: 1750611559612
+entry_point_name: ''
+experiment_id: '424884544014170375'
+lifecycle_stage: deleted
+run_id: 36a310f920e84072b5b98d347c170a3f
+run_name: upset-snake-689
+run_uuid: 36a310f920e84072b5b98d347c170a3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750611551629
+status: 3
+tags: []
+user_id: tomas

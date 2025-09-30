@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/158432610457497144/9a56de1315294cfca896509d73242e70/artifacts
+deleted_time: 1750520287419
+end_time: 1750185280766
+entry_point_name: ''
+experiment_id: '158432610457497144'
+lifecycle_stage: deleted
+run_id: 9a56de1315294cfca896509d73242e70
+run_name: intelligent-pig-606
+run_uuid: 9a56de1315294cfca896509d73242e70
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750185271145
+status: 3
+tags: []
+user_id: tomas

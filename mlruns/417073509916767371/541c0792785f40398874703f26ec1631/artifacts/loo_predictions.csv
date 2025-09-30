@@ -1,0 +1,172 @@
+Molecule ID,Molecule Name,Actual Energy Range,Predicted Energy Range
+1,Dichloromethane,0-1eV,0-1eV
+2,"1,2-Dichloroethane",0-1eV,0-1eV
+3,"1,3-Dichloropropane",1-2eV,1-2eV
+4,"1,4-Dichlorobutane",1-2eV,1-2eV
+5,"1,5-Dichloropentane",1-2eV,0-1eV
+6,"1,6-Dichlorohexane",1-2eV,0-1eV
+7,"1,8-Dichlorooctane",1-2eV,0-1eV
+8,"1,1-Dichloroethane",0-1eV,0-1eV
+9,"1,1-Dichloropropane",0-1eV,0-1eV
+10,"2,2-Dichloropropane",1-2eV,0-1eV
+11,"1,2-Dichloropropane",0-1eV,0-1eV
+12,"1,2-Dichloro-2-methylpropane",0-1eV,0-1eV
+13,"2,3-Dichlorobutane",0-1eV,0-1eV
+14,"1,3-Dichlorobutane",1-2eV,0-1eV
+15,Trichloromethane,0-1eV,0-1eV
+16,"1,1,1-Trichloroethane",0-1eV,0-1eV
+17,"1,1,2-Trichloroethane",0-1eV,0-1eV
+18,"1,1,2-Trichloro-2-methylpropane",0-1eV,0-1eV
+19,"1,2,3-Trichloropropane",0-1eV,0-1eV
+20,Tetrachloromethane,0-1eV,0-1eV
+21,Methyl chloride,0-1eV,1-2eV
+22,Ethyl chloride,1-2eV,1-2eV
+23,1-Chloropropane,1-2eV,1-2eV
+24,1-Chlorobutane,1-2eV,1-2eV
+25,1-Chloropentane,1-2eV,1-2eV
+26,1-Chlorohexane,1-2eV,1-2eV
+27,1-Chloroheptane,1-2eV,0-1eV
+28,1-Chlorooctane,1-2eV,0-1eV
+29,1-Chlorononane,1-2eV,0-1eV
+30,2-Chloropropane,1-2eV,0-1eV
+31,2-Chlorobutane,1-2eV,1-2eV
+32,tert-Butyl chloride,1-2eV,1-2eV
+33,Cyclobutyl chloride,1-2eV,1-2eV
+34,Cyclopentyl chloride,1-2eV,0-1eV
+35,Cyclohexyl chloride,1-2eV,1-2eV
+36,Chlorobenzene,0-1eV,1-2eV
+37,Benzyl chloride,0-1eV,0-1eV
+38,(2-chloroethyl)benzene,0-1eV,0-1eV
+39,Bromobenzene,0-1eV,0-1eV
+40,Benzyl bromide,0-1eV,0-1eV
+41,2-Phenylethyl bromide,0-1eV,0-1eV
+42,1-Bromo-3-phenylpropane,0-1eV,0-1eV
+43,4-Bromochlorobenzene,0-1eV,0-1eV
+44,Tetrafluoromethane,2eV+,2eV+
+45,Hexafluoroethane,2eV+,2eV+
+46,Octafluoropropane,2eV+,2eV+
+47,Perflubutane,2eV+,2eV+
+48,Perfluoroisobutane,2eV+,2eV+
+49,Perfluoropentane,2eV+,2eV+
+50,Perfluorohexane,2eV+,2eV+
+51,Chlorofluoromethane,1-2eV,1-2eV
+52,Chlorodifluoromethane,1-2eV,1-2eV
+53,Chlorotrifluoromethane,1-2eV,1-2eV
+54,Dichlorodifluoromethane,0-1eV,0-1eV
+55,Trichlorofluoromethane,0-1eV,0-1eV
+56,Bromoethane,0-1eV,0-1eV
+57,1-Bromopropane,0-1eV,0-1eV
+58,2-Bromopropane,0-1eV,0-1eV
+59,"1,2-Dibromoethane",0-1eV,0-1eV
+60,1-Bromo-3-chloropropane,0-1eV,0-1eV
+60,1-Bromo-3-chloropropane,0-1eV,0-1eV
+61,1-Bromo-2-chloroethane,0-1eV,0-1eV
+61,1-Bromo-2-chloroethane,0-1eV,0-1eV
+62,1-Chloro-2-bromopropane,0-1eV,0-1eV
+62,1-Chloro-2-bromopropane,0-1eV,0-1eV
+63,"2-Bromo-2-chloro-1,1,1-trifluoroethane",0-1eV,0-1eV
+63,"2-Bromo-2-chloro-1,1,1-trifluoroethane",0-1eV,0-1eV
+63,"2-Bromo-2-chloro-1,1,1-trifluoroethane",2eV+,2eV+
+64,"1,1,2,2-Tetrachloroethane",0-1eV,0-1eV
+55,Trichlorofluoromethane,0-1eV,0-1eV
+20,Tetrachloromethane,0-1eV,0-1eV
+65,Trifluoroiodomethane,0-1eV,0-1eV
+54,Dichlorodifluoromethane,0-1eV,0-1eV
+66,"1,2-Dichlorobenzene",0-1eV,0-1eV
+67,Bromobenzene-d5,0-1eV,0-1eV
+39,Bromobenzene,0-1eV,0-1eV
+36,Chlorobenzene,0-1eV,1-2eV
+68,2-Bromotoluene,0-1eV,0-1eV
+69,2-Chlorotoluene,1-2eV,0-1eV
+56,Bromoethane,0-1eV,0-1eV
+57,1-Bromopropane,0-1eV,0-1eV
+70,1-Bromobutane,0-1eV,0-1eV
+58,2-Bromopropane,0-1eV,0-1eV
+71,2-Bromobutane,0-1eV,0-1eV
+72,Bromocyclopropane,0-1eV,0-1eV
+73,Bromocyclopentane,0-1eV,0-1eV
+74,Bromocyclohexane,0-1eV,0-1eV
+75,2-Bromo-2-methylpropane,0-1eV,0-1eV
+76,Bromoethene,1-2eV,0-1eV
+77,cis-1-bromo-1-propene,1-2eV,0-1eV
+78,trans-1-bromo-1-propene,1-2eV,0-1eV
+79,2-Bromopropene,1-2eV,0-1eV
+80,3-Bromopropene,0-1eV,0-1eV
+81,1-Bromobut-2-ene,0-1eV,0-1eV
+82,3-Bromocyclohex-1-ene,0-1eV,0-1eV
+83,4-bromobut-1-ene,0-1eV,0-1eV
+84,5-bromo-1-pentene,0-1eV,0-1eV
+85,6-bromo-1-hexene,0-1eV,0-1eV
+86,Difluoromethane,1-2eV,2eV+
+53,Chlorotrifluoromethane,1-2eV,1-2eV
+87,Bromotrifluoromethane,0-1eV,0-1eV
+65,Trifluoroiodomethane,0-1eV,0-1eV
+54,Dichlorodifluoromethane,0-1eV,0-1eV
+54,Dichlorodifluoromethane,2eV+,2eV+
+88,Dibromodifluoromethane,0-1eV,0-1eV
+88,Dibromodifluoromethane,2eV+,2eV+
+24,1-Chlorobutane,1-2eV,1-2eV
+1,Dichloromethane,0-1eV,0-1eV
+2,"1,2-Dichloroethane",0-1eV,0-1eV
+3,"1,3-Dichloropropane",1-2eV,1-2eV
+57,1-Bromopropane,0-1eV,0-1eV
+89,Bromochloromethane,0-1eV,0-1eV
+89,Bromochloromethane,0-1eV,0-1eV
+61,1-Bromo-2-chloroethane,0-1eV,0-1eV
+61,1-Bromo-2-chloroethane,0-1eV,0-1eV
+60,1-Bromo-3-chloropropane,0-1eV,0-1eV
+60,1-Bromo-3-chloropropane,0-1eV,0-1eV
+90,1-Bromo-4-chlorobutane,0-1eV,1-2eV
+90,1-Bromo-4-chlorobutane,0-1eV,0-1eV
+91,Dibromomethane,0-1eV,0-1eV
+59,"1,2-Dibromoethane",0-1eV,0-1eV
+92,"1,3-Dibromopropane",0-1eV,0-1eV
+93,"1,4-Dibromobutane",0-1eV,0-1eV
+94,Tribromomethane,0-1eV,0-1eV
+95,Triiodomethane,0-1eV,0-1eV
+96,"2-Chloro-2,2-difluoroacetic acid",0-1eV,0-1eV
+96,"2-Chloro-2,2-difluoroacetic acid",2eV+,2eV+
+97,m-Chloronitrobenzene,0-1eV,0-1eV
+53,Chlorotrifluoromethane,1-2eV,1-2eV
+53,Chlorotrifluoromethane,2eV+,2eV+
+98,Perfluorodiglyme,2eV+,2eV+
+99,Perfluorotriglyme,2eV+,2eV+
+100,Perfluorocrownether,2eV+,2eV+
+101,Pentafluoronitrobenzene,2eV+,2eV+
+102,Pentafluorobenzonitrile,2eV+,2eV+
+103,Pentafluoroiodoethane,0-1eV,0-1eV
+103,Pentafluoroiodoethane,2eV+,2eV+
+104,3-Chloro-1-propene,0-1eV,0-1eV
+105,4-Chloro-1-butene,1-2eV,1-2eV
+106,5-Chloro-1-pentene,1-2eV,1-2eV
+107,6-Chloro-1-hexene,1-2eV,1-2eV
+37,Benzyl chloride,0-1eV,0-1eV
+38,(2-chloroethyl)benzene,0-1eV,0-1eV
+108,1-Chloro-3-phenylpropane,0-1eV,1-2eV
+109,1-Chloro-4-phenylbutane,0-1eV,1-2eV
+110,"trans-1,2-Dichlorocyclohexane",0-1eV,0-1eV
+111,2-Chloroethanol,0-1eV,1-2eV
+112,3-Chloropropanol,0-1eV,1-2eV
+113,"3-Chloro-1,2-propanediol",0-1eV,1-2eV
+114,"1,3-Dichloro-2-propanol",0-1eV,0-1eV
+115,4-Bromodiphenyl ether,0-1eV,0-1eV
+116,4-Bromophenyl ether,0-1eV,0-1eV
+117,Decabromodiphenyl ether,0-1eV,0-1eV
+118,Hexachlorobenzene,0-1eV,0-1eV
+119,5-Bromouracil,0-1eV,0-1eV
+36,Chlorobenzene,0-1eV,1-2eV
+120,Iodobenzene,0-1eV,0-1eV
+121,Chloropentafluorobenzene,0-1eV,0-1eV
+122,Bromopentafluorobenzene,0-1eV,0-1eV
+123,Iodopentafluorobenzene,0-1eV,0-1eV
+124,o-Chlorofluorobenzene,0-1eV,0-1eV
+125,m-Chlorofluorobenzene,0-1eV,0-1eV
+126,m-Chlorobromobenzene,0-1eV,0-1eV
+126,m-Chlorobromobenzene,0-1eV,0-1eV
+127,m-Chloroiodobenzene,0-1eV,0-1eV
+127,m-Chloroiodobenzene,0-1eV,0-1eV
+97,m-Chloronitrobenzene,0-1eV,0-1eV
+128,m-Iodonitrobenzene,0-1eV,0-1eV
+119,5-Bromouracil,0-1eV,0-1eV
+129,5-Chlorouracil,0-1eV,0-1eV
+130,5-Iodouracil,0-1eV,0-1eV

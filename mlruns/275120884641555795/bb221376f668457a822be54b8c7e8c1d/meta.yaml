@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/bb221376f668457a822be54b8c7e8c1d/artifacts
+deleted_time: 1750503008343
+end_time: 1750502502896
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: deleted
+run_id: bb221376f668457a822be54b8c7e8c1d
+run_name: receptive-turtle-319
+run_uuid: bb221376f668457a822be54b8c7e8c1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750502492093
+status: 3
+tags: []
+user_id: tomas

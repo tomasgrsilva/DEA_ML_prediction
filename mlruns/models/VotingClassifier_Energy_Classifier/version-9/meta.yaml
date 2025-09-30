@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752358029541
+current_stage: None
+description: null
+last_updated_timestamp: 1752358029541
+name: VotingClassifier_Energy_Classifier
+run_id: 4ac955a267864983be7dc0e973954b26
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/4ac955a267864983be7dc0e973954b26/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/4ac955a267864983be7dc0e973954b26/artifacts/model
+user_id: null
+version: 9

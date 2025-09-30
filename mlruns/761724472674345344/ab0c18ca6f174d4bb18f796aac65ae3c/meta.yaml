@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/761724472674345344/ab0c18ca6f174d4bb18f796aac65ae3c/artifacts
+end_time: 1751820953683
+entry_point_name: ''
+experiment_id: '761724472674345344'
+lifecycle_stage: active
+run_id: ab0c18ca6f174d4bb18f796aac65ae3c
+run_name: nimble-hound-281
+run_uuid: ab0c18ca6f174d4bb18f796aac65ae3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751820944579
+status: 3
+tags: []
+user_id: tomas

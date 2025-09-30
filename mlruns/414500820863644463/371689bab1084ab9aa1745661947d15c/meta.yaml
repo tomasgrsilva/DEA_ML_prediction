@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/414500820863644463/371689bab1084ab9aa1745661947d15c/artifacts
+end_time: 1743002893046
+entry_point_name: ''
+experiment_id: '414500820863644463'
+lifecycle_stage: active
+run_id: 371689bab1084ab9aa1745661947d15c
+run_name: mean_bde ev
+run_uuid: 371689bab1084ab9aa1745661947d15c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743002868464
+status: 3
+tags: []
+user_id: tomas

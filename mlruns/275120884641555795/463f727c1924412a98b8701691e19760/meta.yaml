@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/463f727c1924412a98b8701691e19760/artifacts
+end_time: 1752255748094
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: active
+run_id: 463f727c1924412a98b8701691e19760
+run_name: luminous-steed-204
+run_uuid: 463f727c1924412a98b8701691e19760
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752255732802
+status: 3
+tags: []
+user_id: tomas

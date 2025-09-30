@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/424884544014170375/8bed350a68b14164adba416d4a7d76c2/artifacts
+end_time: 1750611694918
+entry_point_name: ''
+experiment_id: '424884544014170375'
+lifecycle_stage: active
+run_id: 8bed350a68b14164adba416d4a7d76c2
+run_name: luminous-shrike-439
+run_uuid: 8bed350a68b14164adba416d4a7d76c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750611686725
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/02424adfd82d44479309bcca79261f27/artifacts
+deleted_time: 1753209040084
+end_time: 1753208616865
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 02424adfd82d44479309bcca79261f27
+run_name: nimble-yak-709
+run_uuid: 02424adfd82d44479309bcca79261f27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753208603882
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754485581672
+current_stage: None
+description: null
+last_updated_timestamp: 1754485581672
+name: ElasticNet_Energy_Regressor
+run_id: 4a6a75494c8b4936bdd32db8933bd2be
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/670817079201944018/4a6a75494c8b4936bdd32db8933bd2be/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/670817079201944018/4a6a75494c8b4936bdd32db8933bd2be/artifacts/model
+user_id: null
+version: 4

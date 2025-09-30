@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/793885500835737935/c0604c8eff574f84baf18c135c4dcd1c/artifacts
+deleted_time: 1748436336478
+end_time: 1748436115848
+entry_point_name: ''
+experiment_id: '793885500835737935'
+lifecycle_stage: deleted
+run_id: c0604c8eff574f84baf18c135c4dcd1c
+run_name: nebulous-doe-144
+run_uuid: c0604c8eff574f84baf18c135c4dcd1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748436100565
+status: 3
+tags: []
+user_id: tomas

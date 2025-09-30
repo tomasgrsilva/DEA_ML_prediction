@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754486036229
+current_stage: None
+description: null
+last_updated_timestamp: 1754486036229
+name: KNN_Energy_Classifier
+run_id: 3875c4d561844d0abb2919ad27fea2d8
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/625141757892407185/3875c4d561844d0abb2919ad27fea2d8/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/625141757892407185/3875c4d561844d0abb2919ad27fea2d8/artifacts/model
+user_id: null
+version: 4

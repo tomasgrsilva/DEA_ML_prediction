@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/999c1f244c92437694f7b48fe7ad2830/artifacts
+deleted_time: 1752252921647
+end_time: 1752252373301
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 999c1f244c92437694f7b48fe7ad2830
+run_name: luxuriant-fox-298
+run_uuid: 999c1f244c92437694f7b48fe7ad2830
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752252362733
+status: 3
+tags: []
+user_id: tomas

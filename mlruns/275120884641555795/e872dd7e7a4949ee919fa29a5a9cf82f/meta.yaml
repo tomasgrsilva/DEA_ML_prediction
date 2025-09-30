@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/e872dd7e7a4949ee919fa29a5a9cf82f/artifacts
+deleted_time: 1751817513465
+end_time: 1751816428097
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: deleted
+run_id: e872dd7e7a4949ee919fa29a5a9cf82f
+run_name: amusing-trout-768
+run_uuid: e872dd7e7a4949ee919fa29a5a9cf82f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751816417013
+status: 3
+tags: []
+user_id: tomas

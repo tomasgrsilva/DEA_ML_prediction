@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/836f3beac28e453e9e3b5208c26a5294/artifacts
+end_time: 1754485492645
+entry_point_name: ''
+experiment_id: '264824002705395223'
+lifecycle_stage: active
+run_id: 836f3beac28e453e9e3b5208c26a5294
+run_name: crawling-goat-465
+run_uuid: 836f3beac28e453e9e3b5208c26a5294
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754485482871
+status: 3
+tags: []
+user_id: tomas

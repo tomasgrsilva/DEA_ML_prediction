@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754485492619
+current_stage: None
+description: null
+last_updated_timestamp: 1754485492619
+name: KNN_Energy_Regressor
+run_id: 836f3beac28e453e9e3b5208c26a5294
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/836f3beac28e453e9e3b5208c26a5294/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/836f3beac28e453e9e3b5208c26a5294/artifacts/model
+user_id: null
+version: 4

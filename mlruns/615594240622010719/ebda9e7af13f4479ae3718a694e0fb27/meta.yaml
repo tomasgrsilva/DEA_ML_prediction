@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/615594240622010719/ebda9e7af13f4479ae3718a694e0fb27/artifacts
+deleted_time: 1750599359084
+end_time: 1750262180794
+entry_point_name: ''
+experiment_id: '615594240622010719'
+lifecycle_stage: deleted
+run_id: ebda9e7af13f4479ae3718a694e0fb27
+run_name: receptive-dog-591
+run_uuid: ebda9e7af13f4479ae3718a694e0fb27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750262171274
+status: 3
+tags: []
+user_id: tomas

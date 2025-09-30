@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/759098936114587917/f0565c0b6d6d42bb808d9134b8217310/artifacts
+end_time: 1750676616840
+entry_point_name: ''
+experiment_id: '759098936114587917'
+lifecycle_stage: active
+run_id: f0565c0b6d6d42bb808d9134b8217310
+run_name: burly-mule-190
+run_uuid: f0565c0b6d6d42bb808d9134b8217310
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750676606096
+status: 3
+tags: []
+user_id: tomas

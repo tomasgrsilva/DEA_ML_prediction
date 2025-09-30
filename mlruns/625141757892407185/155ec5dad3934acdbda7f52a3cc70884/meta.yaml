@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/625141757892407185/155ec5dad3934acdbda7f52a3cc70884/artifacts
+end_time: 1755512828959
+entry_point_name: ''
+experiment_id: '625141757892407185'
+lifecycle_stage: active
+run_id: 155ec5dad3934acdbda7f52a3cc70884
+run_name: amusing-snipe-920
+run_uuid: 155ec5dad3934acdbda7f52a3cc70884
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755512817454
+status: 3
+tags: []
+user_id: tomas

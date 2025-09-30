@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/36b7ab4722d4464bae4c416dcedaca7f/artifacts
+deleted_time: 1754157044489
+end_time: 1754157034458
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: 36b7ab4722d4464bae4c416dcedaca7f
+run_name: calm-grub-154
+run_uuid: 36b7ab4722d4464bae4c416dcedaca7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754157019098
+status: 3
+tags: []
+user_id: tomas

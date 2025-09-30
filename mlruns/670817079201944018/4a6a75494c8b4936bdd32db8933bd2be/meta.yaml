@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/670817079201944018/4a6a75494c8b4936bdd32db8933bd2be/artifacts
+end_time: 1754485581692
+entry_point_name: ''
+experiment_id: '670817079201944018'
+lifecycle_stage: active
+run_id: 4a6a75494c8b4936bdd32db8933bd2be
+run_name: adorable-whale-252
+run_uuid: 4a6a75494c8b4936bdd32db8933bd2be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754485572389
+status: 3
+tags: []
+user_id: tomas

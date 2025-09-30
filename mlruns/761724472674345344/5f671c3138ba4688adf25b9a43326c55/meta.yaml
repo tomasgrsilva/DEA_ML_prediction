@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/761724472674345344/5f671c3138ba4688adf25b9a43326c55/artifacts
+deleted_time: 1752252901770
+end_time: 1752252844875
+entry_point_name: ''
+experiment_id: '761724472674345344'
+lifecycle_stage: deleted
+run_id: 5f671c3138ba4688adf25b9a43326c55
+run_name: clean-snail-68
+run_uuid: 5f671c3138ba4688adf25b9a43326c55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752252834633
+status: 3
+tags: []
+user_id: tomas

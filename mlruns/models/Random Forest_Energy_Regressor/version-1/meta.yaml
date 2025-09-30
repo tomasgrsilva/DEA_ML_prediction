@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1750524115900
+current_stage: None
+description: null
+last_updated_timestamp: 1750524115900
+name: Random Forest_Energy_Regressor
+run_id: d884eb5370d7454f8f6389383d3056c6
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/761724472674345344/d884eb5370d7454f8f6389383d3056c6/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/761724472674345344/d884eb5370d7454f8f6389383d3056c6/artifacts/model
+user_id: null
+version: 1

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/cdcde692759547b8bcb516b58d5120aa/artifacts
+deleted_time: 1752358481218
+end_time: 1752358471897
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: cdcde692759547b8bcb516b58d5120aa
+run_name: defiant-gull-272
+run_uuid: cdcde692759547b8bcb516b58d5120aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752358462304
+status: 3
+tags: []
+user_id: tomas

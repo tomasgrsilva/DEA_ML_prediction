@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/253346810349526215/061e8dcf954340ad8a5c742494561d33/artifacts
+end_time: 1742673479353
+entry_point_name: ''
+experiment_id: '253346810349526215'
+lifecycle_stage: active
+run_id: 061e8dcf954340ad8a5c742494561d33
+run_name: rebellious-lamb-759
+run_uuid: 061e8dcf954340ad8a5c742494561d33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742673445309
+status: 3
+tags: []
+user_id: tomas

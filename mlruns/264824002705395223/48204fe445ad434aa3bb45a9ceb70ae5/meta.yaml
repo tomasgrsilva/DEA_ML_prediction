@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/48204fe445ad434aa3bb45a9ceb70ae5/artifacts
+deleted_time: 1750518032754
+end_time: 1750517384441
+entry_point_name: ''
+experiment_id: '264824002705395223'
+lifecycle_stage: deleted
+run_id: 48204fe445ad434aa3bb45a9ceb70ae5
+run_name: thundering-goat-291
+run_uuid: 48204fe445ad434aa3bb45a9ceb70ae5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750517375888
+status: 3
+tags: []
+user_id: tomas

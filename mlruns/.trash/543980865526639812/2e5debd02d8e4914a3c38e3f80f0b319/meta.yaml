@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/543980865526639812/2e5debd02d8e4914a3c38e3f80f0b319/artifacts
+deleted_time: 1742673306597
+end_time: 1742673102151
+entry_point_name: ''
+experiment_id: '543980865526639812'
+lifecycle_stage: deleted
+run_id: 2e5debd02d8e4914a3c38e3f80f0b319
+run_name: gregarious-flea-936
+run_uuid: 2e5debd02d8e4914a3c38e3f80f0b319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742673069640
+status: 3
+tags: []
+user_id: tomas

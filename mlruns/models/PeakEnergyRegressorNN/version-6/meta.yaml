@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1750441369262
+current_stage: None
+description: null
+last_updated_timestamp: 1750441369262
+name: PeakEnergyRegressorNN
+run_id: 2713b7f4df494cfabba4265ea26f49ba
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/498650057002498391/2713b7f4df494cfabba4265ea26f49ba/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/498650057002498391/2713b7f4df494cfabba4265ea26f49ba/artifacts/model
+user_id: null
+version: 6

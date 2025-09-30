@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1752255748067
+current_stage: None
+description: null
+last_updated_timestamp: 1752255748067
+name: EnergyRegressorNN
+run_id: 463f727c1924412a98b8701691e19760
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/463f727c1924412a98b8701691e19760/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/463f727c1924412a98b8701691e19760/artifacts/model
+user_id: null
+version: 8

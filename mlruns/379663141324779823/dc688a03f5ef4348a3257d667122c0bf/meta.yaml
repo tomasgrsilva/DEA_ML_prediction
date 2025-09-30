@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/dc688a03f5ef4348a3257d667122c0bf/artifacts
+deleted_time: 1753130951235
+end_time: 1753128990277
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: dc688a03f5ef4348a3257d667122c0bf
+run_name: defiant-koi-567
+run_uuid: dc688a03f5ef4348a3257d667122c0bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753128973313
+status: 3
+tags: []
+user_id: tomas

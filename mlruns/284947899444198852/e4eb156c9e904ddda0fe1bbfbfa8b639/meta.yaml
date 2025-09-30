@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/284947899444198852/e4eb156c9e904ddda0fe1bbfbfa8b639/artifacts
+end_time: 1751818296767
+entry_point_name: ''
+experiment_id: '284947899444198852'
+lifecycle_stage: active
+run_id: e4eb156c9e904ddda0fe1bbfbfa8b639
+run_name: respected-stoat-15
+run_uuid: e4eb156c9e904ddda0fe1bbfbfa8b639
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751818288227
+status: 3
+tags: []
+user_id: tomas

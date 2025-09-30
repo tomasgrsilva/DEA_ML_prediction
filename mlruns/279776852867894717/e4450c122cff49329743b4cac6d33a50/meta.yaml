@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/279776852867894717/e4450c122cff49329743b4cac6d33a50/artifacts
+deleted_time: 1750520266922
+end_time: 1750519943665
+entry_point_name: ''
+experiment_id: '279776852867894717'
+lifecycle_stage: deleted
+run_id: e4450c122cff49329743b4cac6d33a50
+run_name: unequaled-cow-381
+run_uuid: e4450c122cff49329743b4cac6d33a50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750519935009
+status: 3
+tags: []
+user_id: tomas

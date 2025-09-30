@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/670817079201944018/8577056e0fce44829b18ef246147c052/artifacts
+end_time: 1750518556644
+entry_point_name: ''
+experiment_id: '670817079201944018'
+lifecycle_stage: active
+run_id: 8577056e0fce44829b18ef246147c052
+run_name: nervous-fawn-173
+run_uuid: 8577056e0fce44829b18ef246147c052
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518548731
+status: 3
+tags: []
+user_id: tomas

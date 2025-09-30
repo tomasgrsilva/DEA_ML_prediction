@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223
+creation_time: 1750323665327
+experiment_id: '264824002705395223'
+last_update_time: 1750323665327
+lifecycle_stage: active
+name: Regression_KNN

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/761724472674345344/54a415976ec2453e9b4e21a1a9826789/artifacts
+end_time: 1755519036163
+entry_point_name: ''
+experiment_id: '761724472674345344'
+lifecycle_stage: active
+run_id: 54a415976ec2453e9b4e21a1a9826789
+run_name: resilient-ray-201
+run_uuid: 54a415976ec2453e9b4e21a1a9826789
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755519024954
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/424884544014170375/24fd6e9a65b94f2686158feb938154a2/artifacts
+end_time: 1754485035159
+entry_point_name: ''
+experiment_id: '424884544014170375'
+lifecycle_stage: active
+run_id: 24fd6e9a65b94f2686158feb938154a2
+run_name: amazing-sloth-318
+run_uuid: 24fd6e9a65b94f2686158feb938154a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754485025023
+status: 3
+tags: []
+user_id: tomas

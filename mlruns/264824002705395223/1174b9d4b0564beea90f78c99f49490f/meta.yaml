@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/1174b9d4b0564beea90f78c99f49490f/artifacts
+deleted_time: 1750599198978
+end_time: 1750328450916
+entry_point_name: ''
+experiment_id: '264824002705395223'
+lifecycle_stage: deleted
+run_id: 1174b9d4b0564beea90f78c99f49490f
+run_name: gregarious-shad-917
+run_uuid: 1174b9d4b0564beea90f78c99f49490f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750328437040
+status: 3
+tags: []
+user_id: tomas

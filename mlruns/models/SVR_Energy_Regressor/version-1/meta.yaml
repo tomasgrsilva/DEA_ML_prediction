@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1750518064568
+current_stage: None
+description: null
+last_updated_timestamp: 1750518064568
+name: SVR_Energy_Regressor
+run_id: 256bee9dd95742f5a4e9549d7f771649
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/508144207109567041/256bee9dd95742f5a4e9549d7f771649/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/508144207109567041/256bee9dd95742f5a4e9549d7f771649/artifacts/model
+user_id: null
+version: 1

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/50a6f43afe1d45408e019390c486e0e2/artifacts
+end_time: 1751819712842
+entry_point_name: ''
+experiment_id: '264824002705395223'
+lifecycle_stage: active
+run_id: 50a6f43afe1d45408e019390c486e0e2
+run_name: suave-conch-854
+run_uuid: 50a6f43afe1d45408e019390c486e0e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751819704803
+status: 3
+tags: []
+user_id: tomas

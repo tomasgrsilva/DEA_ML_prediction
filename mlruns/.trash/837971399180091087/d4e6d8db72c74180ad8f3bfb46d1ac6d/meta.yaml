@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/837971399180091087/d4e6d8db72c74180ad8f3bfb46d1ac6d/artifacts
+deleted_time: 1750520289980
+end_time: 1750182456425
+entry_point_name: ''
+experiment_id: '837971399180091087'
+lifecycle_stage: deleted
+run_id: d4e6d8db72c74180ad8f3bfb46d1ac6d
+run_name: stylish-shark-951
+run_uuid: d4e6d8db72c74180ad8f3bfb46d1ac6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750182446916
+status: 3
+tags: []
+user_id: tomas

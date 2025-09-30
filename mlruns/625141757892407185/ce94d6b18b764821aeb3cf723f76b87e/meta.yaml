@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/625141757892407185/ce94d6b18b764821aeb3cf723f76b87e/artifacts
+end_time: 1754483160330
+entry_point_name: ''
+experiment_id: '625141757892407185'
+lifecycle_stage: active
+run_id: ce94d6b18b764821aeb3cf723f76b87e
+run_name: glamorous-ox-990
+run_uuid: ce94d6b18b764821aeb3cf723f76b87e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754483147899
+status: 3
+tags: []
+user_id: tomas

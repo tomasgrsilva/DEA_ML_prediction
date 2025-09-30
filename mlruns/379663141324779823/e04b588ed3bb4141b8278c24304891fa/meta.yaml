@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/e04b588ed3bb4141b8278c24304891fa/artifacts
+deleted_time: 1754145960032
+end_time: 1754144421095
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: e04b588ed3bb4141b8278c24304891fa
+run_name: nebulous-cub-618
+run_uuid: e04b588ed3bb4141b8278c24304891fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754144404503
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/479487356692595557/d5275ce6265a45c5b523fcf97d2a50d5/artifacts
+deleted_time: 1742673252151
+end_time: 1742672579588
+entry_point_name: ''
+experiment_id: '479487356692595557'
+lifecycle_stage: deleted
+run_id: d5275ce6265a45c5b523fcf97d2a50d5
+run_name: funny-gnat-900
+run_uuid: d5275ce6265a45c5b523fcf97d2a50d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742672552627
+status: 3
+tags: []
+user_id: tomas

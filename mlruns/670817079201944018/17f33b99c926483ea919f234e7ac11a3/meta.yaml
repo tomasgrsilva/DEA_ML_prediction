@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/670817079201944018/17f33b99c926483ea919f234e7ac11a3/artifacts
+deleted_time: 1750599562469
+end_time: 1750333527443
+entry_point_name: ''
+experiment_id: '670817079201944018'
+lifecycle_stage: deleted
+run_id: 17f33b99c926483ea919f234e7ac11a3
+run_name: efficient-bird-398
+run_uuid: 17f33b99c926483ea919f234e7ac11a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750333518583
+status: 3
+tags: []
+user_id: tomas

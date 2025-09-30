@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754145948283
+current_stage: None
+description: null
+last_updated_timestamp: 1754145948283
+name: EnergyClassifierNN
+run_id: fc67cb9834e1420aa591ab4c8d36cfa0
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/fc67cb9834e1420aa591ab4c8d36cfa0/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/fc67cb9834e1420aa591ab4c8d36cfa0/artifacts/model
+user_id: null
+version: 16

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/4972bd35d5cc414b9a928c649d27e0ee/artifacts
+deleted_time: 1755673371657
+end_time: 1755673313687
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 4972bd35d5cc414b9a928c649d27e0ee
+run_name: capable-goose-481
+run_uuid: 4972bd35d5cc414b9a928c649d27e0ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755673300188
+status: 3
+tags: []
+user_id: tomas

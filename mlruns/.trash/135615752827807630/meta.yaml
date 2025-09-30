@@ -1,0 +1,7 @@
+artifact_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/135615752827807630
+creation_time: 1750176629576
+experiment_id: '135615752827807630'
+last_update_time: 1750177387834
+lifecycle_stage: deleted
+name: LOOCV_XGBoost
+tags: {}

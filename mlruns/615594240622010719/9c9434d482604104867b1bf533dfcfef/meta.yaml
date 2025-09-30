@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/615594240622010719/9c9434d482604104867b1bf533dfcfef/artifacts
+end_time: 1755531097777
+entry_point_name: ''
+experiment_id: '615594240622010719'
+lifecycle_stage: active
+run_id: 9c9434d482604104867b1bf533dfcfef
+run_name: amusing-wren-186
+run_uuid: 9c9434d482604104867b1bf533dfcfef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755531088051
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/736258116341840298/5585af2516c2431baebffb15b848f91b/artifacts
+deleted_time: 1750599556432
+end_time: 1750332774310
+entry_point_name: ''
+experiment_id: '736258116341840298'
+lifecycle_stage: deleted
+run_id: 5585af2516c2431baebffb15b848f91b
+run_name: marvelous-moose-96
+run_uuid: 5585af2516c2431baebffb15b848f91b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750332765151
+status: 3
+tags: []
+user_id: tomas

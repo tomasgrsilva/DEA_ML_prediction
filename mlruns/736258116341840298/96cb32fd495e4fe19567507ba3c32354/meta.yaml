@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/736258116341840298/96cb32fd495e4fe19567507ba3c32354/artifacts
+end_time: 1750610861873
+entry_point_name: ''
+experiment_id: '736258116341840298'
+lifecycle_stage: active
+run_id: 96cb32fd495e4fe19567507ba3c32354
+run_name: bustling-bird-180
+run_uuid: 96cb32fd495e4fe19567507ba3c32354
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750610853212
+status: 3
+tags: []
+user_id: tomas

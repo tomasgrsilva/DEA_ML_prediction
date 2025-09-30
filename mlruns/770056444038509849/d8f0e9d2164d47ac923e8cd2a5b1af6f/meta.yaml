@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/d8f0e9d2164d47ac923e8cd2a5b1af6f/artifacts
+end_time: 1750520881492
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: active
+run_id: d8f0e9d2164d47ac923e8cd2a5b1af6f
+run_name: illustrious-wolf-782
+run_uuid: d8f0e9d2164d47ac923e8cd2a5b1af6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750520873004
+status: 3
+tags: []
+user_id: tomas

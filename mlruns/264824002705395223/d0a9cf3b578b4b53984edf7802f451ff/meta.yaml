@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/d0a9cf3b578b4b53984edf7802f451ff/artifacts
+deleted_time: 1750328488719
+end_time: 1750323679438
+entry_point_name: ''
+experiment_id: '264824002705395223'
+lifecycle_stage: deleted
+run_id: d0a9cf3b578b4b53984edf7802f451ff
+run_name: kindly-loon-567
+run_uuid: d0a9cf3b578b4b53984edf7802f451ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750323666055
+status: 3
+tags: []
+user_id: tomas

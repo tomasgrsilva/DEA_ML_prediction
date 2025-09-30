@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/284947899444198852/7b91c2df0e9b4ca49a1396f6af7ca0f5/artifacts
+deleted_time: 1750675368754
+end_time: 1750674575043
+entry_point_name: ''
+experiment_id: '284947899444198852'
+lifecycle_stage: deleted
+run_id: 7b91c2df0e9b4ca49a1396f6af7ca0f5
+run_name: inquisitive-mink-108
+run_uuid: 7b91c2df0e9b4ca49a1396f6af7ca0f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750674565163
+status: 3
+tags: []
+user_id: tomas

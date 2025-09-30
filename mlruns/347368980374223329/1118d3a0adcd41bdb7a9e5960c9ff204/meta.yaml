@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/347368980374223329/1118d3a0adcd41bdb7a9e5960c9ff204/artifacts
+end_time: 1744024050884
+entry_point_name: ''
+experiment_id: '347368980374223329'
+lifecycle_stage: active
+run_id: 1118d3a0adcd41bdb7a9e5960c9ff204
+run_name: RF_88_molecules_Cl
+run_uuid: 1118d3a0adcd41bdb7a9e5960c9ff204
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744024016896
+status: 3
+tags: []
+user_id: tomas

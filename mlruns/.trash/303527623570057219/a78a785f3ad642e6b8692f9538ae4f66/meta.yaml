@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/303527623570057219/a78a785f3ad642e6b8692f9538ae4f66/artifacts
+deleted_time: 1750520292488
+end_time: 1750181674803
+entry_point_name: ''
+experiment_id: '303527623570057219'
+lifecycle_stage: deleted
+run_id: a78a785f3ad642e6b8692f9538ae4f66
+run_name: gentle-loon-589
+run_uuid: a78a785f3ad642e6b8692f9538ae4f66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750181665370
+status: 3
+tags: []
+user_id: tomas

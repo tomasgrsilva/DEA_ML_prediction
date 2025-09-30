@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/cef1412090b3400b8fd8813329e0abc5/artifacts
+deleted_time: 1754157329612
+end_time: 1754157073463
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: cef1412090b3400b8fd8813329e0abc5
+run_name: dazzling-fly-97
+run_uuid: cef1412090b3400b8fd8813329e0abc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754157059590
+status: 3
+tags: []
+user_id: tomas

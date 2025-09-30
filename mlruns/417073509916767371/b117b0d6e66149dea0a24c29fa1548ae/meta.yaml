@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/417073509916767371/b117b0d6e66149dea0a24c29fa1548ae/artifacts
+end_time: 1746529270371
+entry_point_name: ''
+experiment_id: '417073509916767371'
+lifecycle_stage: active
+run_id: b117b0d6e66149dea0a24c29fa1548ae
+run_name: 120 molecules - with training
+run_uuid: b117b0d6e66149dea0a24c29fa1548ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746529190310
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1755520016182
+current_stage: None
+description: null
+last_updated_timestamp: 1755520016182
+name: MLP_Energy_Regressor
+run_id: 8a2236b8e64442e8a77b21b6382e78db
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/793219614082977724/8a2236b8e64442e8a77b21b6382e78db/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/793219614082977724/8a2236b8e64442e8a77b21b6382e78db/artifacts/model
+user_id: null
+version: 1

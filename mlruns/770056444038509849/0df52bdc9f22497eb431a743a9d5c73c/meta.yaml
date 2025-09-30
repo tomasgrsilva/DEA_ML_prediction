@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/0df52bdc9f22497eb431a743a9d5c73c/artifacts
+deleted_time: 1752358410677
+end_time: 1752358377044
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 0df52bdc9f22497eb431a743a9d5c73c
+run_name: caring-snail-742
+run_uuid: 0df52bdc9f22497eb431a743a9d5c73c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752358367682
+status: 3
+tags: []
+user_id: tomas

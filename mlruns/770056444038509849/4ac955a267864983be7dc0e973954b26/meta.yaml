@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/4ac955a267864983be7dc0e973954b26/artifacts
+end_time: 1752358029573
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: active
+run_id: 4ac955a267864983be7dc0e973954b26
+run_name: upset-bass-453
+run_uuid: 4ac955a267864983be7dc0e973954b26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752358019768
+status: 3
+tags: []
+user_id: tomas

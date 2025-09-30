@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/759098936114587917/c8618c2406ef4b86ad2830755d29f804/artifacts
+end_time: 1750520762750
+entry_point_name: ''
+experiment_id: '759098936114587917'
+lifecycle_stage: active
+run_id: c8618c2406ef4b86ad2830755d29f804
+run_name: bustling-calf-120
+run_uuid: c8618c2406ef4b86ad2830755d29f804
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750520754018
+status: 3
+tags: []
+user_id: tomas

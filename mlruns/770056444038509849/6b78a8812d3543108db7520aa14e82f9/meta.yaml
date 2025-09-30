@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/6b78a8812d3543108db7520aa14e82f9/artifacts
+deleted_time: 1755673928528
+end_time: 1755673842409
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 6b78a8812d3543108db7520aa14e82f9
+run_name: unleashed-elk-654
+run_uuid: 6b78a8812d3543108db7520aa14e82f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755673828898
+status: 3
+tags: []
+user_id: tomas

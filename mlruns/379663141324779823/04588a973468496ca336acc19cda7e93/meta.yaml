@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/04588a973468496ca336acc19cda7e93/artifacts
+deleted_time: 1750522568087
+end_time: 1750521633159
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: 04588a973468496ca336acc19cda7e93
+run_name: loud-yak-174
+run_uuid: 04588a973468496ca336acc19cda7e93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750521632937
+status: 4
+tags: []
+user_id: tomas

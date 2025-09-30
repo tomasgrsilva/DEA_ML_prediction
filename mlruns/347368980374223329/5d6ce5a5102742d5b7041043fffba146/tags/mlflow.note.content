@@ -1,0 +1,3 @@
+Mantained the same model with the same hyperparameters.
+Added molecules, from 35 to 88, which is a significant jump.
+Filtered to only include halogen fragments: Cl, Br, F, I.

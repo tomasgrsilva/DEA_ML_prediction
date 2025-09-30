@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/135615752827807630/1da9bfc6c60d49f29222f92afc2e3f18/artifacts
+deleted_time: 1750177384718
+end_time: 1750176641482
+entry_point_name: ''
+experiment_id: '135615752827807630'
+lifecycle_stage: deleted
+run_id: 1da9bfc6c60d49f29222f92afc2e3f18
+run_name: youthful-quail-640
+run_uuid: 1da9bfc6c60d49f29222f92afc2e3f18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750176629935
+status: 3
+tags: []
+user_id: tomas

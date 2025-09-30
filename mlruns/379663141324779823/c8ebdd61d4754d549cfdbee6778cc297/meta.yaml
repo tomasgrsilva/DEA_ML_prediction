@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/c8ebdd61d4754d549cfdbee6778cc297/artifacts
+deleted_time: 1754157611261
+end_time: 1754157537969
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: c8ebdd61d4754d549cfdbee6778cc297
+run_name: carefree-colt-687
+run_uuid: c8ebdd61d4754d549cfdbee6778cc297
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754157525016
+status: 3
+tags: []
+user_id: tomas

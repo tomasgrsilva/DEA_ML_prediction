@@ -1,0 +1,30 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "molecular_weight",
+      "Cl1",
+      "Cl2",
+      "Cl3",
+      "Cl4",
+      "num_C",
+      "num_H",
+      "num_Cl",
+      "lowest_bde",
+      "mean_bde"
+    ],
+    "data": [
+      [
+        50.48752,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        3.69,
+        3.69
+      ]
+    ]
+  }
+}

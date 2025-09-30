@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/62f4cc11108b4aaa9ca9b610e900222f/artifacts
+deleted_time: 1752501028083
+end_time: 1752501011225
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 62f4cc11108b4aaa9ca9b610e900222f
+run_name: luminous-ape-952
+run_uuid: 62f4cc11108b4aaa9ca9b610e900222f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752500996642
+status: 3
+tags: []
+user_id: tomas

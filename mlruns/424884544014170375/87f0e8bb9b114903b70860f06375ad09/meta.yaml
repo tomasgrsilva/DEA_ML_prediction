@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/424884544014170375/87f0e8bb9b114903b70860f06375ad09/artifacts
+end_time: 1750518690937
+entry_point_name: ''
+experiment_id: '424884544014170375'
+lifecycle_stage: active
+run_id: 87f0e8bb9b114903b70860f06375ad09
+run_name: peaceful-auk-220
+run_uuid: 87f0e8bb9b114903b70860f06375ad09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518683219
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/279776852867894717/2c5ccb9c3fe24038a861fd4192eb9743/artifacts
+end_time: 1750520157542
+entry_point_name: ''
+experiment_id: '279776852867894717'
+lifecycle_stage: active
+run_id: 2c5ccb9c3fe24038a861fd4192eb9743
+run_name: painted-bird-36
+run_uuid: 2c5ccb9c3fe24038a861fd4192eb9743
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750520149342
+status: 3
+tags: []
+user_id: tomas

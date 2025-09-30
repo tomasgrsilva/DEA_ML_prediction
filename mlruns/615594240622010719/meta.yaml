@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/615594240622010719
+creation_time: 1750262170738
+experiment_id: '615594240622010719'
+last_update_time: 1750262170738
+lifecycle_stage: active
+name: Regression_XGBoost

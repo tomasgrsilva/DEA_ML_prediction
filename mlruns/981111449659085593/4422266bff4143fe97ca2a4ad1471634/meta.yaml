@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/981111449659085593/4422266bff4143fe97ca2a4ad1471634/artifacts
+end_time: 1751818430547
+entry_point_name: ''
+experiment_id: '981111449659085593'
+lifecycle_stage: active
+run_id: 4422266bff4143fe97ca2a4ad1471634
+run_name: sassy-foal-644
+run_uuid: 4422266bff4143fe97ca2a4ad1471634
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751818420908
+status: 3
+tags: []
+user_id: tomas

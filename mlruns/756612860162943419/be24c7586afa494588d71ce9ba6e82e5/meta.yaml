@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/756612860162943419/be24c7586afa494588d71ce9ba6e82e5/artifacts
+end_time: 1746462540610
+entry_point_name: ''
+experiment_id: '756612860162943419'
+lifecycle_stage: active
+run_id: be24c7586afa494588d71ce9ba6e82e5
+run_name: 130molecules
+run_uuid: be24c7586afa494588d71ce9ba6e82e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746462464850
+status: 3
+tags: []
+user_id: tomas

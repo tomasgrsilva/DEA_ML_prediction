@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1755531172972
+current_stage: None
+description: null
+last_updated_timestamp: 1755531172972
+name: CatBoost_Energy_Regressor
+run_id: 0493e206c7ed4338bdf0eee3303a1382
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/424884544014170375/0493e206c7ed4338bdf0eee3303a1382/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/424884544014170375/0493e206c7ed4338bdf0eee3303a1382/artifacts/model
+user_id: null
+version: 7

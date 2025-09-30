@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/965290950438407220/cad7d2dbdde9444c9d85b2009166ad34/artifacts
+deleted_time: 1742673255602
+end_time: 1742664664029
+entry_point_name: ''
+experiment_id: '965290950438407220'
+lifecycle_stage: deleted
+run_id: cad7d2dbdde9444c9d85b2009166ad34
+run_name: hilarious-mule-390
+run_uuid: cad7d2dbdde9444c9d85b2009166ad34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742664639430
+status: 3
+tags: []
+user_id: tomas

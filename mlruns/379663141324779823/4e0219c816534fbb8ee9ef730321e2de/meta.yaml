@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/4e0219c816534fbb8ee9ef730321e2de/artifacts
+end_time: 1753130938847
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: active
+run_id: 4e0219c816534fbb8ee9ef730321e2de
+run_name: learned-bat-589
+run_uuid: 4e0219c816534fbb8ee9ef730321e2de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753130920610
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/793885500835737935/f32ed37d29784fd08c73b67aaad2a54d/artifacts
+deleted_time: 1748436336472
+end_time: 1748436068560
+entry_point_name: ''
+experiment_id: '793885500835737935'
+lifecycle_stage: deleted
+run_id: f32ed37d29784fd08c73b67aaad2a54d
+run_name: whimsical-sloth-30
+run_uuid: f32ed37d29784fd08c73b67aaad2a54d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748436068460
+status: 4
+tags: []
+user_id: tomas

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/279776852867894717/18b53ef8b0cd4ffaa6fedb4ce9c7284a/artifacts
+end_time: 1754482942962
+entry_point_name: ''
+experiment_id: '279776852867894717'
+lifecycle_stage: active
+run_id: 18b53ef8b0cd4ffaa6fedb4ce9c7284a
+run_name: industrious-auk-622
+run_uuid: 18b53ef8b0cd4ffaa6fedb4ce9c7284a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754482921135
+status: 3
+tags: []
+user_id: tomas

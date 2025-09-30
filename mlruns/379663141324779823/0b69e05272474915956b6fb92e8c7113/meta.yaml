@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/379663141324779823/0b69e05272474915956b6fb92e8c7113/artifacts
+deleted_time: 1751817538040
+end_time: 1751815895336
+entry_point_name: ''
+experiment_id: '379663141324779823'
+lifecycle_stage: deleted
+run_id: 0b69e05272474915956b6fb92e8c7113
+run_name: bedecked-lynx-854
+run_uuid: 0b69e05272474915956b6fb92e8c7113
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751815884774
+status: 3
+tags: []
+user_id: tomas

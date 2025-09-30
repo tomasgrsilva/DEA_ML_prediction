@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/400477362932688206/30902ad2b426453b8f9857c429415aee/artifacts
+end_time: 1741692275235
+entry_point_name: ''
+experiment_id: '400477362932688206'
+lifecycle_stage: active
+run_id: 30902ad2b426453b8f9857c429415aee
+run_name: RF_log_features
+run_uuid: 30902ad2b426453b8f9857c429415aee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741692251749
+status: 3
+tags: []
+user_id: tomas

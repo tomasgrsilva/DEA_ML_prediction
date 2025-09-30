@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1754483410864
+current_stage: None
+description: null
+last_updated_timestamp: 1754483410864
+name: Random Forest_Energy_Classifier
+run_id: cfe8597faaac46cc911e28386f8af13f
+run_link: null
+source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/167860949834969950/cfe8597faaac46cc911e28386f8af13f/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/167860949834969950/cfe8597faaac46cc911e28386f8af13f/artifacts/model
+user_id: null
+version: 3

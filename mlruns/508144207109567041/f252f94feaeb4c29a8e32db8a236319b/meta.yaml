@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/508144207109567041/f252f94feaeb4c29a8e32db8a236319b/artifacts
+end_time: 1750610594765
+entry_point_name: ''
+experiment_id: '508144207109567041'
+lifecycle_stage: active
+run_id: f252f94feaeb4c29a8e32db8a236319b
+run_name: kindly-dolphin-867
+run_uuid: f252f94feaeb4c29a8e32db8a236319b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750610586163
+status: 3
+tags: []
+user_id: tomas

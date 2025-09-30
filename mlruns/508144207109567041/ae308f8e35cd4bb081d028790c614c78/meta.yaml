@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/508144207109567041/ae308f8e35cd4bb081d028790c614c78/artifacts
+end_time: 1751820219721
+entry_point_name: ''
+experiment_id: '508144207109567041'
+lifecycle_stage: active
+run_id: ae308f8e35cd4bb081d028790c614c78
+run_name: charming-smelt-733
+run_uuid: ae308f8e35cd4bb081d028790c614c78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751820211793
+status: 3
+tags: []
+user_id: tomas

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/167860949834969950/22e0753d4cfb4518a415dfd57b27ad13/artifacts
+end_time: 1755516294357
+entry_point_name: ''
+experiment_id: '167860949834969950'
+lifecycle_stage: active
+run_id: 22e0753d4cfb4518a415dfd57b27ad13
+run_name: gaudy-ray-667
+run_uuid: 22e0753d4cfb4518a415dfd57b27ad13
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755516279819
+status: 3
+tags: []
+user_id: tomas

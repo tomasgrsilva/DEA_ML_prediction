@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/303527623570057219/9597b0cd80f74a7ab1d6a3dcc61e9269/artifacts
+deleted_time: 1750520292488
+end_time: 1750179555185
+entry_point_name: ''
+experiment_id: '303527623570057219'
+lifecycle_stage: deleted
+run_id: 9597b0cd80f74a7ab1d6a3dcc61e9269
+run_name: bouncy-skunk-78
+run_uuid: 9597b0cd80f74a7ab1d6a3dcc61e9269
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750179545147
+status: 3
+tags: []
+user_id: tomas

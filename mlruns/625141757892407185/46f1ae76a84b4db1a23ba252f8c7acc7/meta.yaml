@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/625141757892407185/46f1ae76a84b4db1a23ba252f8c7acc7/artifacts
+end_time: 1751818506318
+entry_point_name: ''
+experiment_id: '625141757892407185'
+lifecycle_stage: active
+run_id: 46f1ae76a84b4db1a23ba252f8c7acc7
+run_name: indecisive-deer-382
+run_uuid: 46f1ae76a84b4db1a23ba252f8c7acc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751818498305
+status: 3
+tags: []
+user_id: tomas

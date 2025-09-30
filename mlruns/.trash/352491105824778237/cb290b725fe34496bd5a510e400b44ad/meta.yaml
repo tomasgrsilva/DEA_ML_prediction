@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/352491105824778237/cb290b725fe34496bd5a510e400b44ad/artifacts
+deleted_time: 1750520273837
+end_time: 1750339305146
+entry_point_name: ''
+experiment_id: '352491105824778237'
+lifecycle_stage: deleted
+run_id: cb290b725fe34496bd5a510e400b44ad
+run_name: delicate-goose-667
+run_uuid: cb290b725fe34496bd5a510e400b44ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750339294373
+status: 3
+tags: []
+user_id: tomas

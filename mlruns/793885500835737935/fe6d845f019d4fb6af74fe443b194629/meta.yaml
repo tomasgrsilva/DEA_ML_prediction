@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/793885500835737935/fe6d845f019d4fb6af74fe443b194629/artifacts
+end_time: 1748426367292
+entry_point_name: ''
+experiment_id: '793885500835737935'
+lifecycle_stage: active
+run_id: fe6d845f019d4fb6af74fe443b194629
+run_name: bustling-rat-352
+run_uuid: fe6d845f019d4fb6af74fe443b194629
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748426357683
+status: 3
+tags: []
+user_id: tomas

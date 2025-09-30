@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/4d7e09d221ad4c9fbaddf3403bfd373d/artifacts
+end_time: 1751817531505
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: active
+run_id: 4d7e09d221ad4c9fbaddf3403bfd373d
+run_name: efficient-pig-752
+run_uuid: 4d7e09d221ad4c9fbaddf3403bfd373d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751817520597
+status: 3
+tags: []
+user_id: tomas

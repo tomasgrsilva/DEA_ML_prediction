@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/400477362932688206
+creation_time: 1741692251019
+experiment_id: '400477362932688206'
+last_update_time: 1741692251019
+lifecycle_stage: active
+name: RandomForest_Regression_v2

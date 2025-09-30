@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849/34f4c3c1992c49b4b2691e8e50960fbf/artifacts
+deleted_time: 1752500821834
+end_time: 1752500760036
+entry_point_name: ''
+experiment_id: '770056444038509849'
+lifecycle_stage: deleted
+run_id: 34f4c3c1992c49b4b2691e8e50960fbf
+run_name: victorious-kit-63
+run_uuid: 34f4c3c1992c49b4b2691e8e50960fbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752500745475
+status: 3
+tags: []
+user_id: tomas

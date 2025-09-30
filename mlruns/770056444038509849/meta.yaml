@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/770056444038509849
+creation_time: 1750520872720
+experiment_id: '770056444038509849'
+last_update_time: 1750520872720
+lifecycle_stage: active
+name: Classification_VotingClassifier

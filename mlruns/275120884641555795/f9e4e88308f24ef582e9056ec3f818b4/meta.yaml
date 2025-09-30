@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/f9e4e88308f24ef582e9056ec3f818b4/artifacts
+deleted_time: 1753206378735
+end_time: 1753132774601
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: deleted
+run_id: f9e4e88308f24ef582e9056ec3f818b4
+run_name: popular-lynx-513
+run_uuid: f9e4e88308f24ef582e9056ec3f818b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753132757782
+status: 3
+tags: []
+user_id: tomas

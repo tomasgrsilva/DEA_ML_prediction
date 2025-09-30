@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/508144207109567041/4f58b6fdf59b4ac09ff77a88645ec9e9/artifacts
+deleted_time: 1754484773419
+end_time: 1754484308843
+entry_point_name: ''
+experiment_id: '508144207109567041'
+lifecycle_stage: deleted
+run_id: 4f58b6fdf59b4ac09ff77a88645ec9e9
+run_name: rebellious-gull-140
+run_uuid: 4f58b6fdf59b4ac09ff77a88645ec9e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754484299343
+status: 3
+tags: []
+user_id: tomas

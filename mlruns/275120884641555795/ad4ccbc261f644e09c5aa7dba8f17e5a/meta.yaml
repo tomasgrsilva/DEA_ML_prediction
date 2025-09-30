@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/275120884641555795/ad4ccbc261f644e09c5aa7dba8f17e5a/artifacts
+end_time: 1753206560828
+entry_point_name: ''
+experiment_id: '275120884641555795'
+lifecycle_stage: active
+run_id: ad4ccbc261f644e09c5aa7dba8f17e5a
+run_name: masked-mouse-607
+run_uuid: ad4ccbc261f644e09c5aa7dba8f17e5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753206549419
+status: 3
+tags: []
+user_id: tomas

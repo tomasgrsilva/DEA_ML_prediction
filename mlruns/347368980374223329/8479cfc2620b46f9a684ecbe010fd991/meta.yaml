@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/347368980374223329/8479cfc2620b46f9a684ecbe010fd991/artifacts
+end_time: 1744204914743
+entry_point_name: ''
+experiment_id: '347368980374223329'
+lifecycle_stage: active
+run_id: 8479cfc2620b46f9a684ecbe010fd991
+run_name: opt_param_v2
+run_uuid: 8479cfc2620b46f9a684ecbe010fd991
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744204877369
+status: 3
+tags: []
+user_id: tomas
