@@ -8,12 +8,7 @@ EXCLUDED_RESULT_IDS = [40, 56, 65, 73, 102, 104, 106, 108, 109, 111, 112, 113, 1
                        233, 234, 240, 242, 257, 269, 278, 282, 284, 285, 301, 314, 323, 344, 345, 355,
                        357, 358, 359, 360, 361, 362, 364, 389, 393, 399, 411, 423, 195, 213]
 
-# Result_id 189 is duplicate with peak at 0 eV but if I remove it, metrics get worse.
-# Result_id 152 refers to a problematic entry
-# Excluding 153 instead of 154 for CCl4 even though it has a slightly higher cross section because it is a 0 peak.
-# 24, 121, 189 duplicates on the test set
-#24 195
-#121 213
+
 
 
 
