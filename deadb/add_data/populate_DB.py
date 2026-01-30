@@ -15,7 +15,7 @@ from common.properties.chemicals_properties import (MW_from_formula, extract_hal
 logging.basicConfig(filename="db_insert.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load the Excel file
-file_path = r"C:\Users\tomas\OneDrive\Ambiente de Trabalho\TESE\DEAdb_BDE.xlsx"
+file_path = r"C:\Users\User\Desktop\tese\DEAdb_BDE.xlsx"
 sheets = pd.read_excel(file_path, sheet_name=None)
 
 # Create a database session
