@@ -1,8 +1,8 @@
 import pandas as pd
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import IntegrityError
-from deadb.common.database import engine
-from deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
+from DEA_ML_prediction.deadb.common.database import engine
+from DEA_ML_prediction.deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
                                  Level1Category, Level2Category, Level3Category, Level4Category, Journal, Author,
                                  Institution, paper_author_link, paper_institution_link)
 
@@ -33,7 +33,7 @@ def upsert_record(model, data, unique_field="id"):
         logging.info(f"✅ Inserted {model.__name__}: {data}")
 
 try:
-    """
+
     # Upsert Level Categories
     for sheet, model in [
         ("level1_categories", Level1Category),
@@ -46,28 +46,63 @@ try:
             for record in df.dropna(how="all").to_dict(orient="records"):
                 upsert_record(model, record, unique_field="name")
 
-    
     # Upsert Families
     if "families" in sheets:
         df = sheets["families"]
-        level1_ids = {c.name: c.id for c in session.query(Level1Category.name, Level1Category.id).all()}
-        level2_ids = {c.name: c.id for c in session.query(Level2Category.name, Level2Category.id).all()}
-        level3_ids = {c.name: c.id for c in session.query(Level3Category.name, Level3Category.id).all()}
-        level4_ids = {c.name: c.id for c in session.query(Level4Category.name, Level4Category.id).all()}
 
-        for family in df.dropna(how="all").to_dict(orient="records"):
-            family_data = {
-                "id": family["id"],
-                "level1_id": level1_ids.get(family["level1_name"]),
-                "level2_id": level2_ids.get(family["level2_name"]),
-                "level3_id": level3_ids.get(family["level3_name"]),
-                "level4_id": level4_ids.get(family["level4_name"]) if family.get("level4_name") else None
-            }
-            if all([family_data["level1_id"], family_data["level2_id"], family_data["level3_id"]]):
-                upsert_record(Family, family_data)
+        level1_ids = {c.name: c.id for c in session.query(Level1Category.name, Level1Category.id)}
+        level2_ids = {c.name: c.id for c in session.query(Level2Category.name, Level2Category.id)}
+        level3_ids = {c.name: c.id for c in session.query(Level3Category.name, Level3Category.id)}
+        level4_ids = {c.name: c.id for c in session.query(Level4Category.name, Level4Category.id)}
+
+        for row in df.dropna(how="all").to_dict(orient="records"):
+            level1_id = level1_ids.get(row["level1_name"])
+            level2_id = level2_ids.get(row["level2_name"])
+            level4_id = level4_ids.get(row["level4_name"]) if row.get("level4_name") else None
+
+            if not (level1_id and level2_id):
+                logging.warning(f"⚠️ Skipping family {row.get('id')}: missing Level1 or Level2")
+                continue
+
+            # Parse Level3 names (comma separated in Excel)
+            level3_list = []
+            level3_names = row.get("level3_name")
+
+            if level3_names and not pd.isna(level3_names):
+                for name in level3_names.split(","):
+                    name = name.strip()
+                    if name in level3_ids:
+                        level3_list.append(level3_ids[name])
+                    else:
+                        logging.warning(f"⚠️ Level3Category '{name}' not found for family {row.get('id')}")
+
+            if not level3_list:
+                logging.warning(f"⚠️ Skipping family {row.get('id')}: no valid Level3 categories")
+                continue
+
+            family = session.get(Family, row["id"])
+
+            if not family:
+                family = Family(
+                    id=row["id"],
+                    level1_id=level1_id,
+                    level2_id=level2_id,
+                    level4_id=level4_id
+                )
+                session.add(family)
+                logging.info(f"🆕 Created Family {row['id']}")
             else:
-                logging.warning(f"⚠️ Skipping family {family['id']}: Missing level IDs - {family_data}")
-    """
+                family.level1_id = level1_id
+                family.level2_id = level2_id
+                family.level4_id = level4_id
+                logging.info(f"🔄 Updating Family {row['id']}")
+
+            # Assign MANY-TO-MANY Level3 relationship
+            family.level3_categories = session.query(Level3Category).filter(
+                Level3Category.id.in_(level3_list)
+            ).all()
+
+            logging.info(f" Linked Level3 IDs {level3_list}")
 
     # Upsert Molecules, Families, and FamilyLevel3Link
     if "molecules" in sheets:
