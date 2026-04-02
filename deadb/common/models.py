@@ -1,4 +1,4 @@
-from sqlalchemy import Integer, String, Float, ForeignKeyConstraint, JSON, ForeignKey, Table, Column
+from sqlalchemy import Integer, String, Float, Boolean, ForeignKeyConstraint, JSON, ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.sql.schema import UniqueConstraint
 from deadb.common.database import Base
@@ -107,6 +107,9 @@ class Molecule(Base):
 
     # Relationship to family (Many Molecules can have the same Family)
     family: Mapped["Family"] = relationship("Family", back_populates="molecules")
+
+    # One Molecule can have many Reactions
+    reaction_list: Mapped[list["Reaction"]] = relationship("Reaction", back_populates="molecule")
 
     bde_entries: Mapped[list["Bde"]] = relationship("Bde", back_populates="molecule")
 
@@ -248,6 +251,7 @@ class Results(Base):
     energy_res: Mapped[float] = mapped_column(Float, nullable=True)
     appearance_energy: Mapped[float] = mapped_column(Float, nullable=True)
     relative_intensity: Mapped[float] = mapped_column(Float, nullable=True)
+    most_intense: Mapped[bool] = mapped_column(Boolean, nullable=True)
 
     # Foreign keys with ondelete="CASCADE" handled by ForeignKeyConstraint
     __table_args__ = (
@@ -279,3 +283,80 @@ class Bde(Base):
     # Relationships
     molecule: Mapped["Molecule"] = relationship("Molecule", back_populates="bde_entries")
     fragment: Mapped["Fragment"] = relationship("Fragment", back_populates="bde_entries")
+
+
+class Reaction(Base):
+    __tablename__ = "reactions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    molecule_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    equation: Mapped[str] = mapped_column(String, nullable=True)                        #index=True?
+    fragment_formula: Mapped[list[str]] = mapped_column(JSON, nullable=False)           #JSON?
+    neutral_fragments: Mapped[list[str]] = mapped_column(JSON, nullable=True)
+    enthalpy_formation: Mapped[float] = mapped_column(Float, nullable=True)
+
+    # Foreign keys with ondelete="CASCADE" handled by ForeignKeyConstraint
+    __table_args__ = (
+        ForeignKeyConstraint(['molecule_id'], ['molecules.id'], ondelete="CASCADE"),
+    )
+
+    #Relationships
+    molecule: Mapped["Molecule"] = relationship("Molecule", back_populates="reaction_list")
+
+    papers2: Mapped[list["PaperReactionLink"]] = relationship("PaperReactionLink", back_populates="reaction_list")
+
+
+class PaperReactionLink(Base):
+    __tablename__ = "paper_reaction_link"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    paper_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    reaction_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    #molecule_formula: ?
+    #fragment_formula: ?
+
+    # Foreign keys with ondelete="CASCADE" handled by ForeignKeyConstraint
+    __table_args__ = (
+        ForeignKeyConstraint(['paper_id'], ['papers.id'], ondelete="CASCADE"),
+        ForeignKeyConstraint(['reaction_id'], ['reactions.id'], ondelete="CASCADE")
+    )
+
+    #Relationships
+
+
+
+class ResultsIonization(Base):
+    __tablename__ = "results_ionization"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    paper_reaction_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    fragment_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    threshold: Mapped[float] = mapped_column(Float, nullable=True)
+    relative_intensity: Mapped[float] = mapped_column(Float, nullable=True)
+
+    # Foreign keys with ondelete="CASCADE" handled by ForeignKeyConstraint
+    __table_args__ = (
+        ForeignKeyConstraint(['paper_reaction_id'], ['paper_reaction_link.id'], ondelete="CASCADE"),
+        ForeignKeyConstraint(['fragment_id'], ['fragments.id'], ondelete="CASCADE")
+    )
+
+    #Relationships
+
+
+"""
+class CrossSection(Base):
+    __tablename__ = "cross_sections"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    results_ionization_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    energy: Mapped[float] = mapped_column(Float, nullable=False)
+    cross_section: Mapped[float] = mapped_column(Float, nullable=False)
+
+    # Foreign keys with ondelete="CASCADE" handled by ForeignKeyConstraint
+    __table_args__ = (
+        ForeignKeyConstraint(['results_ionization_id'], ['results_ionization.id'], ondelete="CASCADE")
+    )
+
+    # Relationships
+
+"""

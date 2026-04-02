@@ -209,7 +209,7 @@ def run_selected_model(selection: int):
         params=best_params,
         experiment_name=f"Regression_{config['name']}",
         save_dir="../results",
-        tracking_uri="file:///C:/Users/tomas/PycharmProjects/DEA/mlruns",
+        tracking_uri="file:///C:/Users/tese",
         task_type="regression",
         model_type="sklearn",
         registered_model_name=f"{config['name']}_Energy_Regressor",

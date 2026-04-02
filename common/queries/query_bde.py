@@ -14,6 +14,7 @@ def get_results():
     with engine.connect() as conn:
         return pd.read_sql("""
             SELECT id, paper_molecule_id, peak, fragment_id
+            WHERE most_intense = True
             FROM results
         """, conn)
 

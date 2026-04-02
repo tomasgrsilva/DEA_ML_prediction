@@ -1,8 +1,8 @@
 import pandas as pd
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import IntegrityError
-from DEA_ML_prediction.deadb.common.database import engine
-from DEA_ML_prediction.deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
+from deadb.common.database import engine
+from deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
                                  Level1Category, Level2Category, Level3Category, Level4Category, Journal, Author,
                                  Institution, paper_author_link, paper_institution_link)
 
@@ -206,96 +206,102 @@ try:
             molecule_data["family_id"] = family_cache[family_key]
             upsert_record(Molecule, molecule_data)
 
-            # Upsert Papers
-            if "papers" in sheets:
-                df = sheets["papers"]
-                setup_ids = {s.id for s in session.query(Setup.id).all()}
-                journal_ids = {j.name: j.id for j in session.query(Journal.name, Journal.id).all()}
-                author_ids = {a.name: a.id for a in session.query(Author.name, Author.id).all()}
-                institution_ids = {i.name: i.id for i in session.query(Institution.name, Institution.id).all()}
+    # Upsert Setups
+    if "setups" in sheets:
+        df = sheets["setups"]
+        for setup in df.dropna(how="all").to_dict(orient="records"):
+            upsert_record(Setup, setup)
 
-                for paper in df.dropna(how="all").to_dict(orient="records"):
-                    # Handle journal
-                    journal_name = paper.get("journal_name")
-                    if journal_name and journal_name not in journal_ids:
-                        max_journal_id = session.query(Journal.id).order_by(Journal.id.desc()).first()
-                        new_journal_id = (max_journal_id[0] + 1) if max_journal_id else 1
-                        journal_data = {"id": new_journal_id, "name": journal_name}
-                        upsert_record(Journal, journal_data, unique_field="name")
-                        journal_ids[journal_name] = new_journal_id
-                        logging.info(f"🆕 Created new journal: {journal_data}")
+    # Upsert Papers
+    if "papers" in sheets:
+        df = sheets["papers"]
+        setup_ids = {s.id for s in session.query(Setup.id).all()}
+        journal_ids = {j.name: j.id for j in session.query(Journal.name, Journal.id).all()}
+        author_ids = {a.name: a.id for a in session.query(Author.name, Author.id).all()}
+        institution_ids = {i.name: i.id for i in session.query(Institution.name, Institution.id).all()}
 
-                    # Handle authors
-                    author_id_list = []
-                    author_names = paper.get("author_names")
-                    if author_names and not pd.isna(author_names):
-                        for name in author_names.split(","):
-                            name = name.strip()
-                            if name:
-                                if name not in author_ids:
-                                    max_author_id = session.query(Author.id).order_by(Author.id.desc()).first()
-                                    new_author_id = (max_author_id[0] + 1) if max_author_id else 1
-                                    author_data = {"id": new_author_id, "name": name}
-                                    upsert_record(Author, author_data, unique_field="name")
-                                    author_ids[name] = new_author_id
-                                    logging.info(f"🆕 Created new author: {author_data}")
-                                author_id_list.append(author_ids[name])
+        for paper in df.dropna(how="all").to_dict(orient="records"):
+            # Handle journal
+            journal_name = paper.get("journal_name")
+            if journal_name and journal_name not in journal_ids:
+                max_journal_id = session.query(Journal.id).order_by(Journal.id.desc()).first()
+                new_journal_id = (max_journal_id[0] + 1) if max_journal_id else 1
+                journal_data = {"id": new_journal_id, "name": journal_name}
+                upsert_record(Journal, journal_data, unique_field="name")
+                journal_ids[journal_name] = new_journal_id
+                logging.info(f"🆕 Created new journal: {journal_data}")
 
-                    # Handle institutions
-                    institution_id_list = []
-                    institution_names = paper.get("institution_names")
-                    if institution_names and not pd.isna(institution_names):
-                        for name in institution_names.split(";"):
-                            name = name.strip()
-                            if name:
-                                if name not in institution_ids:
-                                    max_institution_id = session.query(Institution.id).order_by(
-                                        Institution.id.desc()).first()
-                                    new_institution_id = (max_institution_id[0] + 1) if max_institution_id else 1
-                                    institution_data = {"id": new_institution_id, "name": name}
-                                    upsert_record(Institution, institution_data, unique_field="name")
-                                    institution_ids[name] = new_institution_id
-                                    logging.info(f"🆕 Created new institution: {institution_data}")
-                                institution_id_list.append(institution_ids[name])
+            # Handle authors
+            author_id_list = []
+            author_names = paper.get("author_names")
+            if author_names and not pd.isna(author_names):
+                for name in author_names.split(","):
+                    name = name.strip()
+                    if name:
+                        if name not in author_ids:
+                            max_author_id = session.query(Author.id).order_by(Author.id.desc()).first()
+                            new_author_id = (max_author_id[0] + 1) if max_author_id else 1
+                            author_data = {"id": new_author_id, "name": name}
+                            upsert_record(Author, author_data, unique_field="name")
+                            author_ids[name] = new_author_id
+                            logging.info(f"🆕 Created new author: {author_data}")
+                        author_id_list.append(author_ids[name])
 
-                    # Prepare paper data
-                    paper_data = {
-                        "id": paper["id"],
-                        "title": paper.get("title"),
-                        "publication_year": int(paper["publication_year"]) if pd.notna(
-                            paper.get("publication_year")) else None,
-                        "doi": paper.get("doi"),
-                        "url": paper.get("url"),
-                        "journal_id": journal_ids.get(journal_name) if journal_name else None,
-                        "setup_id": paper.get("setup_id")
-                    }
+            # Handle institutions
+            institution_id_list = []
+            institution_names = paper.get("institution_names")
+            if institution_names and not pd.isna(institution_names):
+                for name in institution_names.split(";"):
+                    name = name.strip()
+                    if name:
+                        if name not in institution_ids:
+                            max_institution_id = session.query(Institution.id).order_by(
+                                Institution.id.desc()).first()
+                            new_institution_id = (max_institution_id[0] + 1) if max_institution_id else 1
+                            institution_data = {"id": new_institution_id, "name": name}
+                            upsert_record(Institution, institution_data, unique_field="name")
+                            institution_ids[name] = new_institution_id
+                            logging.info(f"🆕 Created new institution: {institution_data}")
+                        institution_id_list.append(institution_ids[name])
 
-                    if paper_data["setup_id"] in setup_ids:
-                        # Upsert Paper
-                        upsert_record(Paper, paper_data)
+            # Prepare paper data
+            paper_data = {
+                "id": paper["id"],
+                "title": paper.get("title"),
+                "publication_year": int(paper["publication_year"]) if pd.notna(
+                    paper.get("publication_year")) else None,
+                "doi": paper.get("doi"),
+                "url": paper.get("url"),
+                "journal_id": journal_ids.get(journal_name) if journal_name else None,
+                "setup_id": paper.get("setup_id")
+            }
 
-                        # Insert into paper_author_link
-                        paper_id = paper_data["id"]
-                        for author_id in author_id_list:
-                            link_data = {"paper_id": paper_id, "author_id": author_id}
-                            existing_link = session.query(paper_author_link).filter_by(
-                                paper_id=paper_id, author_id=author_id
-                            ).first()
-                            if not existing_link:
-                                session.execute(paper_author_link.insert().values(link_data))
-                                logging.info(f"✅ Inserted paper_author_link: {link_data}")
+            if paper_data["setup_id"] in setup_ids:
+                # Upsert Paper
+                upsert_record(Paper, paper_data)
 
-                        # Insert into paper_institution_link
-                        for institution_id in institution_id_list:
-                            link_data = {"paper_id": paper_id, "institution_id": institution_id}
-                            existing_link = session.query(paper_institution_link).filter_by(
-                                paper_id=paper_id, institution_id=institution_id
-                            ).first()
-                            if not existing_link:
-                                session.execute(paper_institution_link.insert().values(link_data))
-                                logging.info(f"✅ Inserted paper_institution_link: {link_data}")
-                    else:
-                        logging.warning(f"⚠️ Skipping paper {paper['id']}: Invalid setup_id {paper_data['setup_id']}")
+                # Insert into paper_author_link
+                paper_id = paper_data["id"]
+                for author_id in author_id_list:
+                    link_data = {"paper_id": paper_id, "author_id": author_id}
+                    existing_link = session.query(paper_author_link).filter_by(
+                        paper_id=paper_id, author_id=author_id
+                    ).first()
+                    if not existing_link:
+                        session.execute(paper_author_link.insert().values(link_data))
+                        logging.info(f"✅ Inserted paper_author_link: {link_data}")
+
+                # Insert into paper_institution_link
+                for institution_id in institution_id_list:
+                    link_data = {"paper_id": paper_id, "institution_id": institution_id}
+                    existing_link = session.query(paper_institution_link).filter_by(
+                        paper_id=paper_id, institution_id=institution_id
+                    ).first()
+                    if not existing_link:
+                        session.execute(paper_institution_link.insert().values(link_data))
+                        logging.info(f"✅ Inserted paper_institution_link: {link_data}")
+            else:
+                logging.warning(f"⚠️ Skipping paper {paper['id']}: Invalid setup_id {paper_data['setup_id']}")
 
 
     # Upsert PaperMoleculeLink
