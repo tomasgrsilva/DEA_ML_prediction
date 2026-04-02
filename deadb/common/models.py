@@ -303,7 +303,7 @@ class Reaction(Base):
     #Relationships
     molecule: Mapped["Molecule"] = relationship("Molecule", back_populates="reaction_list")
 
-    papers2: Mapped[list["PaperReactionLink"]] = relationship("PaperReactionLink", back_populates="reaction_list")
+    #papers2: Mapped[list["PaperReactionLink"]] = relationship("PaperReactionLink", back_populates="reaction_list")
 
 
 class PaperReactionLink(Base):
@@ -322,7 +322,7 @@ class PaperReactionLink(Base):
     )
 
     #Relationships
-
+"""
 
 
 class ResultsIonization(Base):
@@ -341,7 +341,7 @@ class ResultsIonization(Base):
     )
 
     #Relationships
-
+"""
 
 """
 class CrossSection(Base):
