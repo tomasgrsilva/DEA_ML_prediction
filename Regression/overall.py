@@ -289,7 +289,7 @@ def run_model(model_name, objective_fn, model_class):
         params=best_params,
         experiment_name=f"Regression_{model_name}",
         save_dir="../results",
-        tracking_uri="file:///C:/Users/tomas/PycharmProjects/DEA/mlruns",
+        tracking_uri=r"file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns",
         task_type="regression",
         model_type="sklearn",
         registered_model_name=f"{model_name}_Energy_Regressor",

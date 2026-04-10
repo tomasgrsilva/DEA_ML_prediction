@@ -1,0 +1,6 @@
+artifact_location: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/601125971583807196
+creation_time: 1771507459950
+experiment_id: '601125971583807196'
+last_update_time: 1771507459950
+lifecycle_stage: active
+name: Regression_KNN

@@ -2,15 +2,18 @@ import pandas as pd
 from common.queries.query_bde import get_molecules, get_results, get_bde, get_fragment, get_paper_molecule_links
 from common.feature_engineering.feature_eng import (expand_atomic_composition, expand_halogen_positions,
                                                     expand_bde_values, create_energy_range_target)
+from deadb.common.query_all import tabela_resultados
 
-EXCLUDED_RESULT_IDS = [40, 56, 65, 73, 102, 104, 106, 108, 109, 111, 112, 113, 115, 116, 117, 119, 120,
-                       123, 124, 126, 127, 128, 144, 147, 153, 155, 184, 191, 216, 218, 220, 221, 222,
-                       233, 234, 240, 242, 257, 269, 278, 282, 284, 285, 301, 314, 323, 344, 345, 355,
-                       357, 358, 359, 360, 361, 362, 364, 389, 393, 399, 411, 423, 195, 213]
+#EXCLUDED_RESULT_IDS = [40, 56, 65, 73, 102, 104, 106, 108, 109, 111, 112, 113, 115, 116, 117, 119, 120,
+ #                      123, 124, 126, 127, 128, 144, 147, 153, 155, 184, 191, 216, 218, 220, 221, 222,
+  #                     233, 234, 240, 242, 257, 269, 278, 282, 284, 285, 301, 314, 323, 344, 345, 355,
+   #                    357, 358, 359, 360, 361, 362, 364, 389, 393, 399, 411, 423, 195, 213]
 
-
-
-
+a=tabela_resultados()
+b=a.loc[a.most_intense==False, 'id']
+c=b.tolist()
+print(c)
+EXCLUDED_RESULT_IDS=c
 
 INCLUDED_FRAGMENTS = [2, 3, 4, 5]
 """
@@ -131,3 +134,5 @@ def build_model_dataframe(include_dipole=False, use_halogen_positions=False, tas
         df = df.drop(columns=["peak"], errors="ignore")
 
     return df
+print(build_model_dataframe(include_dipole=False).columns
+      )

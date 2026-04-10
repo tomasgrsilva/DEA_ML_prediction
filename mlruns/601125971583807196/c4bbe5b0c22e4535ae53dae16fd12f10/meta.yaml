@@ -1,0 +1,15 @@
+artifact_uri: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/601125971583807196/c4bbe5b0c22e4535ae53dae16fd12f10/artifacts
+end_time: 1771507483779
+entry_point_name: ''
+experiment_id: '601125971583807196'
+lifecycle_stage: active
+run_id: c4bbe5b0c22e4535ae53dae16fd12f10
+run_name: rogue-quail-649
+run_uuid: c4bbe5b0c22e4535ae53dae16fd12f10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771507462149
+status: 3
+tags: []
+user_id: Diogo Chikhi

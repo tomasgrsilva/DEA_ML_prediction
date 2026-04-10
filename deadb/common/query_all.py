@@ -1,6 +1,6 @@
 import pandas as pd
 from deadb.common.database import engine
-
+from sqlalchemy import text
 
 def get_table(table_name: str):
     """
@@ -12,14 +12,17 @@ def get_table(table_name: str):
     Returns:
         pd.DataFrame: DataFrame containing all data from the table.
     """
+    query=f"SELECT * FROM {table_name}"
     with engine.connect() as conn:
-        return pd.read_sql(f"SELECT * FROM {table_name}", conn)
+        return pd.read_sql(query, conn)
 
 
 def get_molecules():
     """Fetch all data from the molecules table."""
     return get_table("molecules")
-
+def tabela_resultados():
+    """Fetch all data from the results table."""
+    return get_table("results")
 
 def get_results():
     """Fetch all data from the results table."""

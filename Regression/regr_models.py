@@ -66,7 +66,7 @@ model_configs = {
     1: {
         "name": "KNN",
         "model": KNeighborsRegressor,
-        "params": {"n_neighbors": 5, "weights": "distance", "p": 2}
+        "params": {"n_neighbors": 5, "weights": "distance", "p": 1}
     },
     2: {
         "name": "SVR",
@@ -209,7 +209,7 @@ def run_selected_model(selection: int):
         params=best_params,
         experiment_name=f"Regression_{config['name']}",
         save_dir="../results",
-        tracking_uri="file:///C:/Users/tomas/PycharmProjects/DEA/mlruns",
+        tracking_uri=r"file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns",
         task_type="regression",
         model_type="sklearn",
         registered_model_name=f"{config['name']}_Energy_Regressor",

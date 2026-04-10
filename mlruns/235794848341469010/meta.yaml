@@ -1,0 +1,6 @@
+artifact_location: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/235794848341469010
+creation_time: 1771593505837
+experiment_id: '235794848341469010'
+last_update_time: 1771593505837
+lifecycle_stage: active
+name: Regression_SVR

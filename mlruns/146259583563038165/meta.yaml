@@ -1,0 +1,6 @@
+artifact_location: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/146259583563038165
+creation_time: 1771595109504
+experiment_id: '146259583563038165'
+last_update_time: 1771595109504
+lifecycle_stage: active
+name: Regression_XGBoost

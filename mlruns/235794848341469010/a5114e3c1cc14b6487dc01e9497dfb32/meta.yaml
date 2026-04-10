@@ -1,0 +1,15 @@
+artifact_uri: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/235794848341469010/a5114e3c1cc14b6487dc01e9497dfb32/artifacts
+end_time: 1771593523733
+entry_point_name: ''
+experiment_id: '235794848341469010'
+lifecycle_stage: active
+run_id: a5114e3c1cc14b6487dc01e9497dfb32
+run_name: unequaled-jay-43
+run_uuid: a5114e3c1cc14b6487dc01e9497dfb32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771593506428
+status: 3
+tags: []
+user_id: Diogo Chikhi

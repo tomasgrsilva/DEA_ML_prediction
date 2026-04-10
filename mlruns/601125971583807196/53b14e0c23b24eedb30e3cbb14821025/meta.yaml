@@ -1,0 +1,15 @@
+artifact_uri: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/601125971583807196/53b14e0c23b24eedb30e3cbb14821025/artifacts
+end_time: 1771508257168
+entry_point_name: ''
+experiment_id: '601125971583807196'
+lifecycle_stage: active
+run_id: 53b14e0c23b24eedb30e3cbb14821025
+run_name: popular-snake-693
+run_uuid: 53b14e0c23b24eedb30e3cbb14821025
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771508240141
+status: 3
+tags: []
+user_id: Diogo Chikhi

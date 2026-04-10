@@ -1,14 +1,14 @@
 aliases: []
-creation_timestamp: 1750610196650
+creation_timestamp: 1771508257142
 current_stage: None
 description: null
-last_updated_timestamp: 1750610196650
+last_updated_timestamp: 1771508257142
 name: KNN_Energy_Regressor
-run_id: c1e81e46169041c6b9164a557fce4823
+run_id: 53b14e0c23b24eedb30e3cbb14821025
 run_link: null
-source: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/c1e81e46169041c6b9164a557fce4823/artifacts/model
+source: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/601125971583807196/53b14e0c23b24eedb30e3cbb14821025/artifacts/model
 status: READY
 status_message: null
-storage_location: file:///C:/Users/tomas/PycharmProjects/DEA/mlruns/264824002705395223/c1e81e46169041c6b9164a557fce4823/artifacts/model
+storage_location: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/601125971583807196/53b14e0c23b24eedb30e3cbb14821025/artifacts/model
 user_id: null
 version: 2

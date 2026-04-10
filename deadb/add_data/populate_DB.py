@@ -1,8 +1,8 @@
 import pandas as pd
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import IntegrityError
-from DEA_ML_prediction.deadb.common.database import engine
-from DEA_ML_prediction.deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
+from deadb.common.database import engine
+from deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
                                  Level1Category, Level2Category, Level3Category, Level4Category, Journal, Author,
                                  Institution, paper_author_link, paper_institution_link)
 
@@ -15,7 +15,7 @@ from common.properties.chemicals_properties import (MW_from_formula, extract_hal
 logging.basicConfig(filename="db_insert.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load the Excel file
-file_path = r"C:\Users\tomas\OneDrive\Ambiente de Trabalho\TESE\DEAdb_BDE.xlsx"
+file_path = r"C:\Users\Diogo Chikhi\OneDrive\Ambiente de Trabalho\Faculdade\5ano\Tese\tese_coisas_do_Tomas\DEAdb_BDE.xlsx"
 sheets = pd.read_excel(file_path, sheet_name=None)
 
 # Create a database session
@@ -205,97 +205,100 @@ try:
                              k not in ["level1_name", "level2_name", "level3_name", "level4_name"]}
             molecule_data["family_id"] = family_cache[family_key]
             upsert_record(Molecule, molecule_data)
+    if "setups" in sheets:
+        df = sheets["setups"]
+        for setup in df.dropna(how="all").to_dict(orient="records"):
+            upsert_record(Setup, setup)
+    # Upsert Papers
+    if "papers" in sheets:
+        df = sheets["papers"]
+        setup_ids = {s.id for s in session.query(Setup.id).all()}
+        journal_ids = {j.name: j.id for j in session.query(Journal.name, Journal.id).all()}
+        author_ids = {a.name: a.id for a in session.query(Author.name, Author.id).all()}
+        institution_ids = {i.name: i.id for i in session.query(Institution.name, Institution.id).all()}
 
-            # Upsert Papers
-            if "papers" in sheets:
-                df = sheets["papers"]
-                setup_ids = {s.id for s in session.query(Setup.id).all()}
-                journal_ids = {j.name: j.id for j in session.query(Journal.name, Journal.id).all()}
-                author_ids = {a.name: a.id for a in session.query(Author.name, Author.id).all()}
-                institution_ids = {i.name: i.id for i in session.query(Institution.name, Institution.id).all()}
+        for paper in df.dropna(how="all").to_dict(orient="records"):
+            # Handle journal
+            journal_name = paper.get("journal_name")
+            if journal_name and journal_name not in journal_ids:
+                max_journal_id = session.query(Journal.id).order_by(Journal.id.desc()).first()
+                new_journal_id = (max_journal_id[0] + 1) if max_journal_id else 1
+                journal_data = {"id": new_journal_id, "name": journal_name}
+                upsert_record(Journal, journal_data, unique_field="name")
+                journal_ids[journal_name] = new_journal_id
+                logging.info(f"🆕 Created new journal: {journal_data}")
 
-                for paper in df.dropna(how="all").to_dict(orient="records"):
-                    # Handle journal
-                    journal_name = paper.get("journal_name")
-                    if journal_name and journal_name not in journal_ids:
-                        max_journal_id = session.query(Journal.id).order_by(Journal.id.desc()).first()
-                        new_journal_id = (max_journal_id[0] + 1) if max_journal_id else 1
-                        journal_data = {"id": new_journal_id, "name": journal_name}
-                        upsert_record(Journal, journal_data, unique_field="name")
-                        journal_ids[journal_name] = new_journal_id
-                        logging.info(f"🆕 Created new journal: {journal_data}")
+            # Handle authors
+            author_id_list = []
+            author_names = paper.get("author_names")
+            if author_names and not pd.isna(author_names):
+                for name in author_names.split(","):
+                    name = name.strip()
+                    if name:
+                        if name not in author_ids:
+                            max_author_id = session.query(Author.id).order_by(Author.id.desc()).first()
+                            new_author_id = (max_author_id[0] + 1) if max_author_id else 1
+                            author_data = {"id": new_author_id, "name": name}
+                            upsert_record(Author, author_data, unique_field="name")
+                            author_ids[name] = new_author_id
+                            logging.info(f"🆕 Created new author: {author_data}")
+                        author_id_list.append(author_ids[name])
 
-                    # Handle authors
-                    author_id_list = []
-                    author_names = paper.get("author_names")
-                    if author_names and not pd.isna(author_names):
-                        for name in author_names.split(","):
-                            name = name.strip()
-                            if name:
-                                if name not in author_ids:
-                                    max_author_id = session.query(Author.id).order_by(Author.id.desc()).first()
-                                    new_author_id = (max_author_id[0] + 1) if max_author_id else 1
-                                    author_data = {"id": new_author_id, "name": name}
-                                    upsert_record(Author, author_data, unique_field="name")
-                                    author_ids[name] = new_author_id
-                                    logging.info(f"🆕 Created new author: {author_data}")
-                                author_id_list.append(author_ids[name])
+            # Handle institutions
+            institution_id_list = []
+            institution_names = paper.get("institution_names")
+            if institution_names and not pd.isna(institution_names):
+                for name in institution_names.split(";"):
+                    name = name.strip()
+                    if name:
+                        if name not in institution_ids:
+                            max_institution_id = session.query(Institution.id).order_by(
+                                Institution.id.desc()).first()
+                            new_institution_id = (max_institution_id[0] + 1) if max_institution_id else 1
+                            institution_data = {"id": new_institution_id, "name": name}
+                            upsert_record(Institution, institution_data, unique_field="name")
+                            institution_ids[name] = new_institution_id
+                            logging.info(f"🆕 Created new institution: {institution_data}")
+                        institution_id_list.append(institution_ids[name])
 
-                    # Handle institutions
-                    institution_id_list = []
-                    institution_names = paper.get("institution_names")
-                    if institution_names and not pd.isna(institution_names):
-                        for name in institution_names.split(";"):
-                            name = name.strip()
-                            if name:
-                                if name not in institution_ids:
-                                    max_institution_id = session.query(Institution.id).order_by(
-                                        Institution.id.desc()).first()
-                                    new_institution_id = (max_institution_id[0] + 1) if max_institution_id else 1
-                                    institution_data = {"id": new_institution_id, "name": name}
-                                    upsert_record(Institution, institution_data, unique_field="name")
-                                    institution_ids[name] = new_institution_id
-                                    logging.info(f"🆕 Created new institution: {institution_data}")
-                                institution_id_list.append(institution_ids[name])
+            # Prepare paper data
+            paper_data = {
+                "id": paper["id"],
+                "title": paper.get("title"),
+                "publication_year": int(paper["publication_year"]) if pd.notna(
+                    paper.get("publication_year")) else None,
+                "doi": paper.get("doi"),
+                "url": paper.get("url"),
+                "journal_id": journal_ids.get(journal_name) if journal_name else None,
+                "setup_id": paper.get("setup_id")
+            }
 
-                    # Prepare paper data
-                    paper_data = {
-                        "id": paper["id"],
-                        "title": paper.get("title"),
-                        "publication_year": int(paper["publication_year"]) if pd.notna(
-                            paper.get("publication_year")) else None,
-                        "doi": paper.get("doi"),
-                        "url": paper.get("url"),
-                        "journal_id": journal_ids.get(journal_name) if journal_name else None,
-                        "setup_id": paper.get("setup_id")
-                    }
+            if paper_data["setup_id"] in setup_ids:
+                # Upsert Paper
+                upsert_record(Paper, paper_data)
 
-                    if paper_data["setup_id"] in setup_ids:
-                        # Upsert Paper
-                        upsert_record(Paper, paper_data)
+                # Insert into paper_author_link
+                paper_id = paper_data["id"]
+                for author_id in author_id_list:
+                    link_data = {"paper_id": paper_id, "author_id": author_id}
+                    existing_link = session.query(paper_author_link).filter_by(
+                        paper_id=paper_id, author_id=author_id
+                    ).first()
+                    if not existing_link:
+                        session.execute(paper_author_link.insert().values(link_data))
+                        logging.info(f"✅ Inserted paper_author_link: {link_data}")
 
-                        # Insert into paper_author_link
-                        paper_id = paper_data["id"]
-                        for author_id in author_id_list:
-                            link_data = {"paper_id": paper_id, "author_id": author_id}
-                            existing_link = session.query(paper_author_link).filter_by(
-                                paper_id=paper_id, author_id=author_id
-                            ).first()
-                            if not existing_link:
-                                session.execute(paper_author_link.insert().values(link_data))
-                                logging.info(f"✅ Inserted paper_author_link: {link_data}")
-
-                        # Insert into paper_institution_link
-                        for institution_id in institution_id_list:
-                            link_data = {"paper_id": paper_id, "institution_id": institution_id}
-                            existing_link = session.query(paper_institution_link).filter_by(
-                                paper_id=paper_id, institution_id=institution_id
-                            ).first()
-                            if not existing_link:
-                                session.execute(paper_institution_link.insert().values(link_data))
-                                logging.info(f"✅ Inserted paper_institution_link: {link_data}")
-                    else:
-                        logging.warning(f"⚠️ Skipping paper {paper['id']}: Invalid setup_id {paper_data['setup_id']}")
+                # Insert into paper_institution_link
+                for institution_id in institution_id_list:
+                    link_data = {"paper_id": paper_id, "institution_id": institution_id}
+                    existing_link = session.query(paper_institution_link).filter_by(
+                        paper_id=paper_id, institution_id=institution_id
+                    ).first()
+                    if not existing_link:
+                        session.execute(paper_institution_link.insert().values(link_data))
+                        logging.info(f"✅ Inserted paper_institution_link: {link_data}")
+            else:
+                logging.warning(f"⚠️ Skipping paper {paper['id']}: Invalid setup_id {paper_data['setup_id']}")
 
 
     # Upsert PaperMoleculeLink
@@ -351,19 +354,46 @@ try:
         paper_molecule_ids = {pml.id for pml in session.query(PaperMoleculeLink.id).all()}
 
         # Get all fragment formulas and their corresponding IDs
-        fragment_ids = {f.formula: f.id for f in session.query(Fragment.formula, Fragment.id).all()}
 
+        #fragment_ids = {f.formula: f.id for f in session.query(Fragment.formula, Fragment.id).all()}
+        ####
+
+        fragment_ids = {}
+        for f in session.query(Fragment).all():
+            fragment_ids[(f.formula, f.electron_affinity)] = f.id
+        ####
         for result in df.dropna(how="all").to_dict(orient="records"):
             # If fragment_id is not given but fragment_formula exists, get fragment_id
-            fragment_formula = result.get("fragment_formula")  # Ensure fragment_formula column exists in Excel
-            if "fragment_id" not in result or pd.isna(result["fragment_id"]):
-                if fragment_formula in fragment_ids:
-                    result["fragment_id"] = fragment_ids[fragment_formula]
-                    logging.info(f"🔄 Found fragment_id {result['fragment_id']} for fragment_formula {fragment_formula}")
+            ####
+            fragment_formula = result.get("fragment_formula")
+            ea = result.get("electron_affinity")
+            ea = None if pd.isna(ea) else ea
+            result.pop("electron_affinity", None)
+
+            fragment_id = fragment_ids.get((fragment_formula, ea))
+            if not fragment_id:
+                matches = [fid for (f, e), fid in fragment_ids.items() if f == fragment_formula]
+                if len(matches) == 1:
+                    fragment_id = matches[0]
                 else:
                     logging.warning(f"⚠️ Fragment formula {fragment_formula} not found in database!")
-                    continue  # Skip this result if no valid fragment_id is found
-
+                    continue
+            result["fragment_id"] = fragment_id
+            ####
+            #fragment_formula = result.get("fragment_formula")  # Ensure fragment_formula column exists in Excel
+            #if "fragment_id" not in result or pd.isna(result["fragment_id"]):
+             #   if fragment_formula in fragment_ids:
+              #      result["fragment_id"] = fragment_ids[fragment_formula]
+               #     logging.info(f"🔄 Found fragment_id {result['fragment_id']} for fragment_formula {fragment_formula}")
+                #else:
+                 #   logging.warning(f"⚠️ Fragment formula {fragment_formula} not found in database!")
+                  #  continue  # Skip this result if no valid fragment_id is found
+             ####
+            if pd.isna(result.get("most_intense")):
+                result["most_intense"] = None
+            else:
+                # Garante que converte corretamente para True/False
+                result["most_intense"] = bool(result["most_intense"])
             # Drop fragment_formula since it's no longer needed
             result.pop("fragment_formula", None)
             result.pop("molecule_name", None)
@@ -373,6 +403,7 @@ try:
             if result.get("paper_molecule_id") in paper_molecule_ids and result.get(
                     "fragment_id") in fragment_ids.values():
                 upsert_record(Results, result)
+            ##############################
 
     # Upsert BDEs
     if "bdes" in sheets:
@@ -448,6 +479,14 @@ try:
             else:
                 # If either molecule_id or fragment_id is missing, log a warning
                 logging.warning(f"⚠️ Missing molecule_id or fragment_id for BDE entry: {bde_entry}")
+        # --- NOVO BLOCO PARA RADIOSSENSIBILIZADORES ---
+    #if "radiossensibilizadores" in sheets:
+       # df = sheets["radiossensibilizadores"]
+       # for radio in df.dropna(how="all").to_dict(orient="records"):
+            # Se no Excel usaste 'id' e 'name', o upsert_record trata de tudo
+            # Se usaste o nome para identificar unicamente:
+            #upsert_record(radiossensibilizadores, radio, unique_field="id")
+    # ----------------------------------------------
    # Commit all changes
     session.commit()
     print("✅ Data successfully inserted/updated in the database!")

@@ -1,4 +1,4 @@
-from sqlalchemy import Integer, String, Float, ForeignKeyConstraint, JSON, ForeignKey, Table, Column
+from sqlalchemy import Integer, String, Float,Boolean, ForeignKeyConstraint, JSON, ForeignKey, Table, Column
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.sql.schema import UniqueConstraint
 from deadb.common.database import Base
@@ -229,7 +229,9 @@ class Fragment(Base):
     charge: Mapped[int] = mapped_column(Integer, nullable=False)
     molecular_weight: Mapped[float] = mapped_column(Float, nullable=True)
     electron_affinity: Mapped[float] = mapped_column(Float, nullable=True)
-
+    ###__table_args__ = (
+    ###    UniqueConstraint('formula', 'electron_affinity'),  ############
+    ###)
     # One Fragment can be referenced by many Results
     results_list: Mapped[list["Results"]] = relationship("Results", back_populates="fragment")
 
@@ -248,6 +250,8 @@ class Results(Base):
     energy_res: Mapped[float] = mapped_column(Float, nullable=True)
     appearance_energy: Mapped[float] = mapped_column(Float, nullable=True)
     relative_intensity: Mapped[float] = mapped_column(Float, nullable=True)
+    most_intense: Mapped[Boolean] = mapped_column(Boolean, nullable=True)
+
 
     # Foreign keys with ondelete="CASCADE" handled by ForeignKeyConstraint
     __table_args__ = (
@@ -279,3 +283,13 @@ class Bde(Base):
     # Relationships
     molecule: Mapped["Molecule"] = relationship("Molecule", back_populates="bde_entries")
     fragment: Mapped["Fragment"] = relationship("Fragment", back_populates="bde_entries")
+
+#class radiossensibilizadores(Base):
+  #  __tablename__ = "radiossensibilizadores"
+
+   # id : Mapped[int] =mapped_column(Integer, primary_key=True, autoincrement=True)
+   # name: Mapped[str] = mapped_column(String, nullable=False)  # Adiciona isto se quiseres nomes!
+
+   # __table_args__ = (
+   #ForeignKeyConstraint(['id'], ['molecules.id'], ondelete="CASCADE"),
+    #)

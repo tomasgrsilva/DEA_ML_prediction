@@ -1,0 +1,6 @@
+artifact_location: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/463902916925924771
+creation_time: 1771595597001
+experiment_id: '463902916925924771'
+last_update_time: 1771595597001
+lifecycle_stage: active
+name: Regression_LightGBM

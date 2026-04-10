@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1771595608555
+current_stage: None
+description: null
+last_updated_timestamp: 1771595608555
+name: LightGBM_Energy_Regressor
+run_id: acdd393794c24399a716a477cb4cb936
+run_link: null
+source: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/463902916925924771/acdd393794c24399a716a477cb4cb936/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:\Users\Diogo Chikhi\Documents\Tese\DEA_ML_prediction\mlruns/463902916925924771/acdd393794c24399a716a477cb4cb936/artifacts/model
+user_id: null
+version: 1

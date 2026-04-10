@@ -1,0 +1,7 @@
+mlflow==2.21.0
+cloudpickle==3.1.2
+logging==0.4.9.6
+numpy==2.4.1
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.17.0
