@@ -1,8 +1,8 @@
-"""added paperreactionlink table
+"""add paper reaction link table
 
-Revision ID: f639464916eb
-Revises: 015d3585e03c
-Create Date: 2026-04-02 18:46:10.548631
+Revision ID: 4ca6e1858167
+Revises: 0f1da7bbf7aa
+Create Date: 2026-05-01 13:01:40.748739
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'f639464916eb'
-down_revision: Union[str, None] = '015d3585e03c'
+revision: str = '4ca6e1858167'
+down_revision: Union[str, None] = '0f1da7bbf7aa'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
