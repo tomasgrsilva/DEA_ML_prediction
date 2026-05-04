@@ -15,7 +15,7 @@ from common.properties.chemicals_properties import (MW_from_formula, extract_hal
 logging.basicConfig(filename="db_insert.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load the Excel file
-file_path = r"C:\Users\User\Desktop\tese\DEAdb_BDE.xlsx"
+file_path = r"C:\Users\User\Desktop\tese\DEAdb_BDE7.xlsx"
 sheets = pd.read_excel(file_path, sheet_name=None)
 
 # Create a database session
@@ -454,7 +454,39 @@ try:
             else:
                 # If either molecule_id or fragment_id is missing, log a warning
                 logging.warning(f"⚠️ Missing molecule_id or fragment_id for BDE entry: {bde_entry}")
-   # Commit all changes
+    """
+    # Upsert Reactions
+    if "reactions" in sheets:
+        df = sheets["reactions"]
+
+        molecule_ids = {m.id for m in session.query(Molecule.id).all()}
+
+        for reaction in df.dropna(how="all").to_dict(orient="records"):
+            molecule_name = reaction.get("molecule_name")
+            if "molecule_id" not in reaction or pd.isna(reaction["molecule_id"]):
+                if molecule_name in molecule_ids:
+                    reaction["molecule_id"] = molecule_ids[molecule_name]
+                    logging.info(f"🔄 Found molecule_id {reaction['molecule_id']} for molecule_name {molecule_name}")
+                else:
+                    logging.warning(f"⚠️ Molecule {molecule_name} not found in database!")
+
+            # Keep only the fields needed for the database
+            reaction = {
+                "id": reaction["id"],
+                "molecule_id": reaction["molecule_id"],
+                "ionization": reaction["ionization"],
+                "equation": reaction["equation"],
+                "fragment_formula": reaction["fragment_formula"],       #lista
+                "neutral_fragments": reaction["neutral_fragments"],     #lista
+                "enthalpy_formation": reaction["enthalpy_formation"]
+            }
+
+
+            if reaction.get("molecule_id") in molecule_ids.values():
+                upsert_record(Reaction, reaction)
+
+    """
+    # Commit all changes
     session.commit()
     print("✅ Data successfully inserted/updated in the database!")
 

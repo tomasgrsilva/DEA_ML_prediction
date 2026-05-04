@@ -109,7 +109,7 @@ class Molecule(Base):
     family: Mapped["Family"] = relationship("Family", back_populates="molecules")
 
     # One Molecule can have many Reactions
-    reaction_list: Mapped[list["Reaction"]] = relationship("Reaction", back_populates="molecule")
+    reactions: Mapped[list["Reaction"]] = relationship("Reaction", back_populates="molecule")
 
     bde_entries: Mapped[list["Bde"]] = relationship("Bde", back_populates="molecule")
 
@@ -195,6 +195,7 @@ class Paper(Base):
         "Institution", secondary=paper_institution_link, back_populates="papers"
     )
     molecules: Mapped[list["PaperMoleculeLink"]] = relationship("PaperMoleculeLink", back_populates="paper")
+    reactions: Mapped[list["PaperReactionLink"]] = relationship("PaperReactionLink", back_populates="paper")
     setup: Mapped["Setup"] = relationship("Setup", back_populates="papers")
     journal: Mapped["Journal"] = relationship("Journal", back_populates="papers")
 
@@ -235,6 +236,7 @@ class Fragment(Base):
 
     # One Fragment can be referenced by many Results
     results_list: Mapped[list["Results"]] = relationship("Results", back_populates="fragment")
+    ionization_results: Mapped[list["ResultsIonization"]] = relationship("ResultsIonization", back_populates="fragment")
 
     bde_entries: Mapped[list["Bde"]] = relationship("Bde", back_populates="fragment")
 
@@ -302,9 +304,8 @@ class Reaction(Base):
     )
 
     #Relationships
-
-    #molecule: Mapped["Molecule"] = relationship("Molecule", back_populates="reaction_list")
-    #papers2: Mapped[list["PaperReactionLink"]] = relationship("PaperReactionLink", back_populates="reaction_list")
+    molecule: Mapped["Molecule"] = relationship("Molecule", back_populates="reactions")
+    papers: Mapped[list["PaperReactionLink"]] = relationship("PaperReactionLink", back_populates="reaction")
 
 
 class PaperReactionLink(Base):
@@ -321,6 +322,10 @@ class PaperReactionLink(Base):
     )
 
     #Relationships
+    paper: Mapped["Paper"] = relationship("Paper", back_populates="reactions")
+    reaction: Mapped["Reaction"] = relationship("Reaction", back_populates="papers")
+
+    ionization_results: Mapped[list["ResultsIonization"]] = relationship("ResultsIonization", back_populates="paper_reaction_link")
 
 
 class IonizationMethod(Base):
@@ -331,6 +336,7 @@ class IonizationMethod(Base):
     description: Mapped[str] = mapped_column(String, nullable=True)
 
     #Relationships
+    results: Mapped[list["ResultsIonization"]] = relationship("ResultsIonization", back_populates="method")
 
 
 class ResultsIonization(Base):
@@ -339,7 +345,7 @@ class ResultsIonization(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     paper_reaction_id: Mapped[int] = mapped_column(Integer)
     fragment_id: Mapped[int] = mapped_column(Integer)
-    method: Mapped[str] = mapped_column(String, nullable=False)
+    method_id: Mapped[str] = mapped_column(String, nullable=False)
     threshold: Mapped[float] = mapped_column(Float, nullable=True)
     relative_intensity: Mapped[float] = mapped_column(Float, nullable=True)
 
@@ -347,12 +353,15 @@ class ResultsIonization(Base):
     __table_args__ = (
         ForeignKeyConstraint(['paper_reaction_id'], ['paper_reaction_link.id'], ondelete="CASCADE"),
         ForeignKeyConstraint(['fragment_id'], ['fragments.id'], ondelete="CASCADE"),
-        ForeignKeyConstraint(['method'], ['ion_methods.code'], ondelete="CASCADE"),
+        ForeignKeyConstraint(['method_id'], ['ion_methods.code'], ondelete="CASCADE"),
     )
 
     #Relationships
+    paper_reaction_link: Mapped["PaperReactionLink"] = relationship("PaperReactionLink", back_populates="ionization_results")
+    fragment: Mapped["Fragment"] = relationship("Fragment", back_populates="ionization_results")
+    method: Mapped[IonizationMethod] = relationship("IonizationMethod", back_populates="results")
 
-
+    cross_sections: Mapped[list["CrossSection"]] = relationship("CrossSection", back_populates="result")
 
 class CrossSection(Base):
     __tablename__ = "cross_sections"
@@ -368,3 +377,4 @@ class CrossSection(Base):
     )
 
     #Relationships
+    result: Mapped["ResultsIonization"] = relationship("ResultsIonization", back_populates="cross_sections")
