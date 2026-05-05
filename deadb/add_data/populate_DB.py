@@ -4,7 +4,7 @@ from sqlalchemy.exc import IntegrityError
 from deadb.common.database import engine
 from deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
                                  Level1Category, Level2Category, Level3Category, Level4Category, Journal, Author,
-                                 Institution, paper_author_link, paper_institution_link)
+                                 Institution, paper_author_link, paper_institution_link, Reaction)
 
 import logging
 from common.properties.chemicals_properties import (MW_from_formula, extract_halogen_positions,
@@ -454,12 +454,14 @@ try:
             else:
                 # If either molecule_id or fragment_id is missing, log a warning
                 logging.warning(f"⚠️ Missing molecule_id or fragment_id for BDE entry: {bde_entry}")
-    """
+
     # Upsert Reactions
     if "reactions" in sheets:
         df = sheets["reactions"]
 
-        molecule_ids = {m.id for m in session.query(Molecule.id).all()}
+        #molecule_ids = {m.id for m in session.query(Molecule.id).all()}
+        molecule_ids = {m.name: m.id for m in session.query(Molecule.name, Molecule.id).all()}
+        molecule_id_set = set(molecule_ids.values())
 
         for reaction in df.dropna(how="all").to_dict(orient="records"):
             molecule_name = reaction.get("molecule_name")
@@ -470,22 +472,25 @@ try:
                 else:
                     logging.warning(f"⚠️ Molecule {molecule_name} not found in database!")
 
-            # Keep only the fields needed for the database
             reaction = {
-                "id": reaction["id"],
+                "id": int(reaction["id"]),
                 "molecule_id": reaction["molecule_id"],
                 "ionization": reaction["ionization"],
                 "equation": reaction["equation"],
-                "fragment_formula": reaction["fragment_formula"],       #lista
-                "neutral_fragments": reaction["neutral_fragments"],     #lista
+                "fragment_formula": reaction["fragment_formula"],
+                "neutral_fragments": reaction["neutral_fragments"],
                 "enthalpy_formation": reaction["enthalpy_formation"]
             }
 
+            if reaction.get("molecule_id") in molecule_id_set:
+                try:
+                    upsert_record(Reaction, data)
+                except Exception as e:
+                    logging.error(f"❌ Error inserting Reaction {reaction}: {e}")
+            else:
+                logging.warning(f"⚠️ Invalid molecule_id for reaction: {reaction}")
 
-            if reaction.get("molecule_id") in molecule_ids.values():
-                upsert_record(Reaction, reaction)
 
-    """
     # Commit all changes
     session.commit()
     print("✅ Data successfully inserted/updated in the database!")
