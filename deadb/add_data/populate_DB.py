@@ -4,7 +4,8 @@ from sqlalchemy.exc import IntegrityError
 from deadb.common.database import engine
 from deadb.common.models import (Molecule, Setup, Paper, PaperMoleculeLink, Fragment, Results, Family, Bde,
                                  Level1Category, Level2Category, Level3Category, Level4Category, Journal, Author,
-                                 Institution, paper_author_link, paper_institution_link, Reaction)
+                                 Institution, paper_author_link, paper_institution_link, Reaction, PaperReactionLink,
+                                 IonizationMethod, ResultsIonization, CrossSection)
 
 import logging
 from common.properties.chemicals_properties import (MW_from_formula, extract_halogen_positions,
@@ -15,7 +16,7 @@ from common.properties.chemicals_properties import (MW_from_formula, extract_hal
 logging.basicConfig(filename="db_insert.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load the Excel file
-file_path = r"C:\Users\User\Desktop\tese\DEAdb_BDE7.xlsx"
+file_path = r"C:\Users\User\Desktop\tese\DEAdb_BDE_final.xlsx"
 sheets = pd.read_excel(file_path, sheet_name=None)
 
 # Create a database session
@@ -31,6 +32,16 @@ def upsert_record(model, data, unique_field="id"):
     else:
         session.add(model(**data))
         logging.info(f"✅ Inserted {model.__name__}: {data}")
+
+
+def parse_list(value):
+    """Handles the strings from table:'Reactions',columns:'fragment_formula'&'neutral_fragments'."""
+    if pd.isna(value):
+        return None
+    elif value in ['-', 'N/D']:
+        return [value]
+    return [v.replace('•','').strip() for v in str(value).replace(';', ',').split(',') if v.strip()]
+
 
 try:
 
@@ -459,7 +470,6 @@ try:
     if "reactions" in sheets:
         df = sheets["reactions"]
 
-        #molecule_ids = {m.id for m in session.query(Molecule.id).all()}
         molecule_ids = {m.name: m.id for m in session.query(Molecule.name, Molecule.id).all()}
         molecule_id_set = set(molecule_ids.values())
 
@@ -473,23 +483,119 @@ try:
                     logging.warning(f"⚠️ Molecule {molecule_name} not found in database!")
 
             reaction = {
-                "id": int(reaction["id"]),
+                "id": reaction["id"],
                 "molecule_id": reaction["molecule_id"],
                 "ionization": reaction["ionization"],
                 "equation": reaction["equation"],
-                "fragment_formula": reaction["fragment_formula"],
-                "neutral_fragments": reaction["neutral_fragments"],
+                "fragment_formula": parse_list(reaction["fragment_formula"]),
+                "neutral_fragments": parse_list(reaction["neutral_fragments"]),
                 "enthalpy_formation": reaction["enthalpy_formation"]
             }
 
-            if reaction.get("molecule_id") in molecule_id_set:
+            if reaction["molecule_id"] in molecule_id_set:
                 try:
-                    upsert_record(Reaction, data)
+                    upsert_record(Reaction, reaction)
                 except Exception as e:
                     logging.error(f"❌ Error inserting Reaction {reaction}: {e}")
             else:
                 logging.warning(f"⚠️ Invalid molecule_id for reaction: {reaction}")
 
+    # Upsert PaperReactionLink
+    if "paper_reaction_link" in sheets:
+        df = sheets["paper_reaction_link"]
+
+        paper_ids = {p.id for p in session.query(Paper.id).all()}
+        reaction_ids = {r.id for r in session.query(Reaction.id).all()}
+
+        for link in df.dropna(how="all").to_dict(orient="records"):
+
+            link = {
+                "id": link["id"],
+                "paper_id": link["paper_id"],
+                "reaction_id": link["reaction_id"]
+            }
+
+            if link["paper_id"] in paper_ids and link["reaction_id"] in reaction_ids:
+                try:
+                    upsert_record(PaperReactionLink, link)
+                except Exception as e:
+                    logging.error(f"❌ Error inserting PaperReactionLink {link}: {e}")
+            else:
+                logging.warning(f"⚠️ Invalid paper_id or reaction_id: {link}")
+
+    # Upsert IonizationMethod
+    if "ion_methods" in sheets:
+        df = sheets["ion_methods"]
+
+        for method in df.dropna(how="all").to_dict(orient="records"):
+
+            method = {
+                "id": method["id"],
+                "code": method["code"],
+                "description": method["description"]
+            }
+
+            if method["code"]:
+                try:
+                    upsert_record(IonizationMethod, method, unique_field="code")
+                except Exception as e:
+                    logging.error(f"❌ Error inserting IonizationMethod {method}: {e}")
+            else:
+                logging.warning(f"⚠️ Missing ionization method code: {method}")
+
+    # Upsert ResultsIonization
+    if "results_ionization" in sheets:
+        df = sheets["results_ionization"]
+
+        paper_reaction_ids = {pr.id for pr in session.query(PaperReactionLink.id).all()}
+        fragment_ids = {f.id for f in session.query(Fragment.id).all()}
+        method_codes = {m.code for m in session.query(IonizationMethod.code).all()}
+
+        for result in df.dropna(how="all").to_dict(orient="records"):
+            """
+            result = {
+                "id": result["id"],
+                "paper_reaction_id": result["paper_reaction_id"],
+                "fragment_id": result["fragment_id"],
+                "method": result["method"],
+                "threshold": result["threshold"],
+                "relative_intensity": result["relative_intensity"]
+            }
+            """
+            result.pop("molecule_formula", None)
+            result.pop("fragment_formula", None)
+
+            if (result["paper_reaction_id"] in paper_reaction_ids
+                and result["fragment_id"] in fragment_ids
+                and result["method"] in method_codes
+                ):
+                try:
+                    upsert_record(ResultsIonization, result)
+                except Exception as e:
+                    logging.error(f"❌ Error inserting ResultsIonization {result}: {e}")
+            else:
+                logging.warning(f"⚠️ Invalid FK reference in ResultsIonization: {result}")
+
+    # Upsert CrossSections
+    if "cross_sections" in sheets:
+        df = sheets["cross_sections"]
+
+        results_ids = {r.id for r in session.query(ResultsIonization.id).all()}
+
+        for cross in df.dropna(how="all").to_dict(orient="records"):
+            cross.pop("molecule_formula", None)
+            cross.pop("fragment_formula", None)
+
+            if (cross["results_ionization_id"] in results_ids
+                and cross["energy"] is not None
+                and cross["cross_section"] is not None
+                ):
+                try:
+                    upsert_record(CrossSection, cross)
+                except Exception as e:
+                    logging.error(f"❌ Error inserting CrossSection {cross}: {e}")
+            else:
+                logging.warning(f"⚠️ Invalid CrossSection entry: {cross}")
 
     # Commit all changes
     session.commit()

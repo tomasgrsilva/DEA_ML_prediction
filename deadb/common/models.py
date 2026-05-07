@@ -336,7 +336,7 @@ class IonizationMethod(Base):
     description: Mapped[str] = mapped_column(String, nullable=True)
 
     #Relationships
-    results: Mapped[list["ResultsIonization"]] = relationship("ResultsIonization", back_populates="method")
+    results: Mapped[list["ResultsIonization"]] = relationship("ResultsIonization", back_populates="ion_method")
 
 
 class ResultsIonization(Base):
@@ -345,7 +345,7 @@ class ResultsIonization(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     paper_reaction_id: Mapped[int] = mapped_column(Integer)
     fragment_id: Mapped[int] = mapped_column(Integer)
-    method_id: Mapped[str] = mapped_column(String, nullable=False)
+    method: Mapped[str] = mapped_column(String, nullable=False)
     threshold: Mapped[float] = mapped_column(Float, nullable=True)
     relative_intensity: Mapped[float] = mapped_column(Float, nullable=True)
 
@@ -353,13 +353,14 @@ class ResultsIonization(Base):
     __table_args__ = (
         ForeignKeyConstraint(['paper_reaction_id'], ['paper_reaction_link.id'], ondelete="CASCADE"),
         ForeignKeyConstraint(['fragment_id'], ['fragments.id'], ondelete="CASCADE"),
-        ForeignKeyConstraint(['method_id'], ['ion_methods.code'], ondelete="CASCADE"),
+        ForeignKeyConstraint(['method'], ['ion_methods.code'], ondelete="CASCADE"),
+        #UniqueConstraint("paper_reaction_id", "fragment_id", "method_id", name="uniq_result_ionization")
     )
 
     #Relationships
     paper_reaction_link: Mapped["PaperReactionLink"] = relationship("PaperReactionLink", back_populates="ionization_results")
     fragment: Mapped["Fragment"] = relationship("Fragment", back_populates="ionization_results")
-    method: Mapped[IonizationMethod] = relationship("IonizationMethod", back_populates="results")
+    ion_method: Mapped[IonizationMethod] = relationship("IonizationMethod", back_populates="results")
 
     cross_sections: Mapped[list["CrossSection"]] = relationship("CrossSection", back_populates="result")
 
