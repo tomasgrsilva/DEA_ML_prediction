@@ -13,7 +13,7 @@ from common.properties.chemicals_properties import (MW_from_formula, extract_hal
 
 
 # Configure logging
-logging.basicConfig(filename="db_insert.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+#logging.basicConfig(filename="db_insert.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Load the Excel file
 file_path = r"C:\Users\User\Desktop\tese\DEAdb_BDE_final.xlsx"
